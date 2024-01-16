@@ -24,7 +24,7 @@ const HomeLanding = () => {
         </div>
 
         <div className="absolute top-0 flex flex-col w-full h-full justify-center items-center text-center">
-          <h1 className="animate glow delay-1 font-karantina text-9xl text-gray-300 z-10" style={{ opacity: 0.57 }}>
+          <h1 className="animate glow delay-1 font-karantina text-9xl text-gray-300 z-10 md1200:text-5xl" style={{ opacity: 0.57 }}>
             Crafting Confidence, <br></br>One Cut at a Time.
           </h1>
           <p className="animate glow delay-2 text-primaryOrange font-allison text-7xl -mt-40 z-20" style={{ opacity: 0.37 }}>Masters</p>

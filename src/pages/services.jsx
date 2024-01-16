@@ -1,5 +1,9 @@
+
+
 export default function Services(){
     return(
-        <div><p>Services Page</p></div>
+        <div>
+         <h1>Services</h1>
+        </div>
     )
 }

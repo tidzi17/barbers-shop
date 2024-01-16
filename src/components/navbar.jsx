@@ -1,28 +1,83 @@
-import React from "react";
-
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { FiMenu } from 'react-icons/fi'
+import { Link } from "react-router-dom";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { IoCloseOutline } from "react-icons/io5";
+import clsx from "clsx";
+import logo from '../assets/logo1.png';
 
 export default function Navbar(){
-    const navigate = useNavigate();
-    /* const [Mobile, setMobile] = useState(false); */
+    const [isSideMenuOpen, setMenu] = useState(false);
+    const handleScroll = () => {
+        const section = document.getElementById('booking-section');
+        section.scrollIntoView({ behavior: 'smooth' });
+      };
+
     return(
-        <div className="z-20 flex fixed w-full h-20 bg-neutral-950  ">
-            <div className="logo"><p>LOGO</p></div>
-            <nav className="">
-                <ul className="flex gap-16 text-white from-stone-100">
-                <li onClick={() => navigate("/")}>Home</li>
-                <li onClick={() => navigate("/about")}>About</li>
-                <li onClick={() => navigate("/services")}>Services</li>
-                <li onClick={() => navigate("/team")}>Team</li>
-                <li onClick={() => navigate("/gallery")}>Gallery</li>
-                <li onClick={() => navigate("/contact")}>Contact</li>
-                <li onClick={() => navigate("/shop")}>Shop</li>
-                </ul>
-                </nav>
-                <div className="flex">
-                    <p>cart</p>
-                    <button>button</button>
-                </div>
+      <div className="">
+        <nav className="w-full fixed bg-black z-20 flex justify-between px-6 items-center py-4 lg:py-0 lg:px-24 ">
+       <div className="flex items-center gap-8">
+       <div className="flex items-center gap-4">
+            <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-gray-400 lg:hidden"/>
+            <Link to="/" className="">
+                <img src={logo} alt="logo" className="w-36 h-30 md1200:w-24 md1200:h-20" />
+            </Link>
         </div>
+        <div className="flex gap-8 ml-11 mt-2 md1200:ml-2 md1200:gap-4">
+        {navlinks.map((d, i) => 
+                 <Link key={i} to={d.link} className="hidden text-gray-400 text-base hover:text-primaryOrange lg:block md1200:text-sm">{d.label}</Link>
+                 )}
+        </div>
+       </div>
+        {/* sidebar mobile */}
+        <div  onClick={() => setMenu(false)} className={clsx("fixed h-full -translate-x-full transition-all w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 right-0 z-40", isSideMenuOpen && 'translate-x-0')}>
+             <div className="text-black bg-white flex flex-col absolute w-56 left-0 top-0 h-screen p-8 gap-8 z-50">
+                <IoCloseOutline
+                onClick={() => setMenu(false)}
+                 className="mt-0 mb-8 text-3xl cursor-pointer" />
+                {navlinks.map((d, i) => 
+                 <Link key={i} to={d.link} className="font-bold">{d.label}</Link>
+                 )}
+             </div>
+        </div>
+        {/*  */}
+        <div className="flex items-center gap-4">
+            <AiOutlineShoppingCart className="text-3xl  text-gray-400 cursor-pointer" />
+            <button onClick={handleScroll} className="md1200:text-sm min800:hidden text-base font-mono text-primaryOrange bg-zinc-900 hover:bg-zinc-800  ease-in-out px-2 py-2 shadow-lg">Book apointment</button>
+        </div>
+      </nav>
+      
+      </div>
     )
 }
+
+const navlinks = [
+    {
+        label: "Home",
+        link: "/"
+    },
+    {
+        label: "About",
+        link: "/about"
+    },
+    {
+        label: "Services",
+        link: "/services"
+    },
+    {
+        label: "Team",
+        link: "/team"
+    },
+    {
+        label: "Gallery",
+        link: "/gallery"
+    },
+    {
+        label: "Contact",
+        link: "/contact"
+    },
+    {
+        label: "Shop",
+        link: "/shop"
+    },
+]
