@@ -9,11 +9,15 @@ import Team from './pages/team';
 import Contact from './pages/contact';
 import Shop from './pages/shop';
 import Footer from './components/footer';
+import ScrollButton from './components/scroll-button';
 
 function App() {
   return (
     <>
     <Navbar/>
+    
+    <ScrollButton />
+    
     <div className='wrapper'>
     <Routes>
     <Route path="/" exact element={<Home />} />

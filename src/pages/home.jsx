@@ -11,11 +11,13 @@ import Testimonials from '../components/testimonials';
 import BookForm from '../components/bookForm';
 import HomePricesMenu from '../components/home-prices-section';
 import TeamMasters from '../components/masters-team';
+import ScrollButton from '../components/scroll-button';
 
 export default function Home(){
   return (
     <>
      <HomeLanding />
+     <ScrollButton />
      <HomeSectionFirst />
      <Services />
      <div className='w-full h-100vh'>

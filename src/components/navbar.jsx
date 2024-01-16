@@ -8,13 +8,14 @@ import logo from '../assets/logo1.png';
 
 export default function Navbar(){
     const [isSideMenuOpen, setMenu] = useState(false);
+    
     const handleScroll = () => {
         const section = document.getElementById('booking-section');
         section.scrollIntoView({ behavior: 'smooth' });
       };
 
     return(
-      <div className="">
+      <div id="navbar" className="">
         <nav className="w-full fixed bg-black z-20 flex justify-between px-6 items-center py-4 lg:py-0 lg:px-24 ">
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
@@ -73,11 +74,11 @@ const navlinks = [
         link: "/gallery"
     },
     {
-        label: "Contact",
-        link: "/contact"
-    },
-    {
         label: "Shop",
         link: "/shop"
+    },
+    {
+        label: "Contact",
+        link: "/contact"
     },
 ]
