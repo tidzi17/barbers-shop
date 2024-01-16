@@ -1,0 +1,37 @@
+{
+    "services": [
+      {
+        "name": "Hot Towel Shave",
+        "price": 25
+      },
+      {
+        "name": "Scalp Massage and Treatment",
+        "price": 30
+      },
+      {
+        "name": "Hair Design or Pattern",
+        "price": 40
+      },
+      {
+        "name": "Coloring Services",
+        "price": 50
+      },
+      {
+        "name": "Facial Treatments",
+        "price": 35
+      },
+      {
+        "name": "Moustache and Beard Styling",
+        "price": 20
+      },
+      {
+        "name": "Hair Tattoo or Etching",
+        "price": 45
+      },
+      {
+        "name": "Hair and Scalp Consultation",
+        "price": 15
+      }
+    ]
+  }
+  

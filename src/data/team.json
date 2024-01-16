@@ -1,0 +1,22 @@
+{
+    "masters": [
+      {
+        "name": "Tony Montana",
+        "url": "assets/team/barber.png",
+        "title": "Hair Master and co-founder",
+        "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, omnis reiciendis ex provident vel aliquid quas officia laborum quo possimus?"
+      },
+      {
+        "name": "Tony Montana",
+        "url": "assets/team/barber.png",
+        "title": "Hair Master and founder",
+        "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, omnis reiciendis ex provident vel aliquid quas officia laborum quo possimus?"
+      },
+      {
+        "name": "Tony Montana",
+        "url": "assets/team/barber.png",
+        "title": "Hair Master and co-founder",
+        "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, omnis reiciendis ex provident vel aliquid quas officia laborum quo possimus?"
+      }
+    ]
+  }
