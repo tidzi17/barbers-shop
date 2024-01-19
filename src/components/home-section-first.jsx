@@ -3,7 +3,7 @@ import random from '../assets/firstsection.png';
 
 export default function HomeSectionFirst(){
     return(
-        <section id="first-section" className="px-20 pt-20 text-white" >
+        <section id="first-section" className="px-20 pt-20 bg-white text-white" >
             <div className="flex flex-col w-full">
                 <div className="w-1/2">
                     <p className="font-allison text-primaryOrange text-5xl">somethin</p>

@@ -16,9 +16,9 @@ export default function PositionsContainer({title,  requirements, description, b
             </div>
             {isVisible && (
         <div className='fixed h-screen w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40 scroll-m-0 flex items-center justify-center'>
-          <div className='w-2/5 h-5/6 absolute bg-white m-auto'>
+          <div className='w-2/5 h-5/6 absolute bg-white m-auto '>
             <div className='flex flex-col px-4 py-3'>
-            <RxCross1 onClick={toggleVisibility} className='text-black text-2xl ml-auto cursor-pointer' />
+            <RxCross1 onClick={toggleVisibility} className='text-black text-2xl ml-auto  cursor-pointer' />
             <div className='ml-10 flex flex-col gap-5 h-full'>
                 <div className='w-fit border-b-[1px] border-black pb-2'>
                 <h2 className='text-3xl font-athiti font-bold mt-5'>{title}</h2>
@@ -44,7 +44,7 @@ export default function PositionsContainer({title,  requirements, description, b
                 </ul>
                 </div>
             </div>
-            <button disabled className='border-2  border-black px-1 py-1 text-2xl font-mono  w-2/5 cursor-pointer self-center mt-10'>Apply Now</button>
+            <button disabled className='border-2 border-black px-1 py-1 text-2xl font-mono  w-2/5 cursor-pointer self-center mt-10 transition-all duration-500 ease-in-out  hover:bg-black hover:text-white'>Apply Now</button>
 
             </div>
           </div>

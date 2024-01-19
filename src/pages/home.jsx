@@ -12,6 +12,9 @@ import BookForm from '../components/bookForm';
 import HomePricesMenu from '../components/home-prices-section';
 import TeamMasters from '../components/masters-team';
 import BookingSection from '../components/bookingSection';
+import video from '../media/bgVideo.mp4';
+
+
 
 
 export default function Home(){

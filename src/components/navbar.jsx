@@ -31,17 +31,17 @@ export default function Navbar(){
 
     return(
       <div id="navbar" className="">
-        <nav style={{ backgroundColor: bgColor}} className="w-full fixed  z-20 flex justify-between px-6 items-center py-4 lg:py-0 lg:px-24 ">
+        <nav style={{ backgroundColor: bgColor}} className="w-full fixed  z-20 flex justify-between px-6 items-center py-6 lg:py-6 lg:px-24 ">
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
             <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-gray-400 lg:hidden"/>
-            <Link to="/" className="">
-                <img src={logo} alt="logo" className="w-36 h-30 md1200:w-24 md1200:h-20" />
+            <Link to="/" className="text-4xl text-white font-serif font-thin">Masters
+                {/* <img src={logo} alt="logo" className="w-36 h-30 md1200:w-24 md1200:h-20" /> */}
             </Link>
         </div>
         <div className="flex gap-8 ml-11 mt-2 md1200:ml-2 md1200:gap-4">
         {navlinks.map((d, i) => 
-                 <Link key={i} to={d.link} className="hidden text-gray-400 text-base hover:text-primaryOrange lg:block md1200:text-sm">{d.label}</Link>
+                 <Link key={i} to={d.link} className="hidden  uppercase text-gray-400 text-base hover:text-primaryOrange lg:block md1200:text-sm">{d.label}</Link>
                  )}
         </div>
        </div>
