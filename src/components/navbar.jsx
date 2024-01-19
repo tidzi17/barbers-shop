@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiMenu } from 'react-icons/fi'
 import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -8,15 +8,30 @@ import logo from '../assets/logo1.png';
 
 export default function Navbar(){
     const [isSideMenuOpen, setMenu] = useState(false);
-    
+    const [scrollPosition, setScrollPosition] = useState(0);
+
     const handleScroll = () => {
         const section = document.getElementById('booking-section');
         section.scrollIntoView({ behavior: 'smooth' });
       };
 
+      useEffect(() => {
+        const handleScroll = () => {
+          const position = window.pageYOffset;
+          setScrollPosition(position);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+  
+      const bgColor = scrollPosition > 100 ? 'black' : 'transparent';
+
     return(
       <div id="navbar" className="">
-        <nav className="w-full fixed bg-black z-20 flex justify-between px-6 items-center py-4 lg:py-0 lg:px-24 ">
+        <nav style={{ backgroundColor: bgColor}} className="w-full fixed  z-20 flex justify-between px-6 items-center py-4 lg:py-0 lg:px-24 ">
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
             <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-gray-400 lg:hidden"/>
@@ -44,7 +59,7 @@ export default function Navbar(){
         {/*  */}
         <div className="flex items-center gap-4">
             <AiOutlineShoppingCart className="text-3xl  text-gray-400 cursor-pointer" />
-            <button onClick={handleScroll} className="md1200:text-sm min800:hidden text-base font-mono text-primaryOrange bg-zinc-900 hover:bg-zinc-800  ease-in-out px-2 py-2 shadow-lg">Book apointment</button>
+            <button onClick={handleScroll} className="md1200:text-sm min800:hidden text-base font-mono text-white bg-zinc-900 hover:bg-zinc-800  ease-in-out px-2 py-2 shadow-lg">Book apointment</button>
         </div>
       </nav>
       

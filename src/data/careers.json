@@ -1,0 +1,82 @@
+{
+    "careers": [
+      {
+        "index": "1",
+        "title": "Barbering Apprentice Internship (Always open)",
+        "requirements": [
+            "Enrolled in or completed a barbering program.",
+            "Passion for men's grooming and hairstyling.",
+            "Willingness to learn and work alongside experienced barbers.",
+            "Excellent communication skills."
+        ],
+        "description": "Our Barbering Apprentice Internship is tailored for individuals passionate about pursuing a career in men's grooming. Work closely with experienced barbers, gain hands-on experience, and develop your skills in a supportive environment. Join our team and start your journey in the world of men's hairstyling.",
+        "benefits": [
+            "Hands-on training from experienced barbers.",
+            "Opportunities for career advancement."
+        ]
+      },
+      {
+        "index": "2",
+        "title": "Salon Assistant Internship",
+        "requirements": [
+            "Enrolled in a cosmetology or related program..",
+            "Strong interest in the salon industry.",
+            "Eagerness to learn and assist in daily salon operations.",
+            "Excellent communication skills."
+        ],
+        "description": "Our Salon Assistant Internship provides hands-on experience in a dynamic salon environment. Assist stylists, learn salon operations, and gain valuable insights into the world of men's grooming. Apply for this internship and kickstart your career in men's hairstyling.",
+        "benefits": [
+            "Mentorship from experienced salon professionals.",
+            "Opportunities for career advancement."
+        ]
+      },
+      {
+        "index": "3",
+        "title": "Master Barber - Senior Stylist",
+        "requirements": [
+            "Minimum of 5 years of experience as a professional barber.",
+            "Valid barbering license.",
+            "Expertise in a variety of traditional and contemporary barbering techniques.",
+            "Exceptional customer service and communication skills."
+        ],
+        "description": "As a Master Barber, you will lead our team in delivering top-notch barbering services to our clients. Showcase your expertise in classic cuts, beard grooming, and other masculine styles. Join us and be part of a team that sets the standard for men's grooming.",
+        "benefits": [
+            "Competitive salary with commission.",
+            "Health and dental insurance.",
+            "Professional development opportunities."
+        ]
+      },
+      {
+        "index": "4",
+        "title": "Beard Specialist",
+        "requirements": [
+            "Proven experience as a beard specialist.",
+            "In-depth knowledge of beard trimming and styling techniques.",
+            "Strong understanding of beard care products.",
+            "Excellent communication skills."
+        ],
+        "description": "As a Beard Specialist, you will focus on providing expert beard grooming services to our clients. Bring your passion for crafting stylish and well-maintained beards to our barbershop. Join our team and contribute to enhancing the masculine aesthetic of our clients.",
+        "benefits": [
+            "Competitive salary with commission.",
+            "Ongoing training on the latest beard grooming trends.",
+            "Employee discounts on salon services."
+        ]
+      },
+      {
+        "index": "5",
+        "title": "Front Desk Coordinator",
+        "requirements": [
+            "Customer service experience in a salon or similar environment.",
+            "Strong organizational and multitasking skills.",
+            "Excellent communication and interpersonal skills.",
+            "Proficient in salon management software."
+        ],
+        "description": "As a Front Desk Coordinator, you will be the first point of contact for our clients. Manage appointments, handle customer inquiries, and ensure the smooth operation of the front desk. Join our team and play a vital role in providing excellent customer service.",
+        "benefits": [
+            "Competitive salary.",
+            "Health and dental insurance.",
+            "Employee discounts on salon services."
+        ]
+      }
+    ]
+  }

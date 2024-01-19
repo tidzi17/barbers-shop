@@ -33,6 +33,8 @@ module.exports = {
           alumni: ['Alumni Sans'],
           athiti: ['Athiti'],
           inika: ['Inika'],
+          arizonia: ['Arizonia'],
+          rivage: ['Beau Rivage'],
          
         },
         height: {

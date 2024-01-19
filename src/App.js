@@ -15,10 +15,8 @@ function App() {
   return (
     <>
     <Navbar/>
-    
     <ScrollButton />
     
-    <div className='wrapper'>
     <Routes>
     <Route path="/" exact element={<Home />} />
     <Route path="/about" exact element={<About />} />
@@ -30,8 +28,7 @@ function App() {
     {/* <Route path='*' element={<NotFound />}/> */}
     </Routes>
     <Footer />
-    </div>
-   
+    
   </>
 
   );

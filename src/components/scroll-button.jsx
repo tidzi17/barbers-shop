@@ -27,7 +27,7 @@ const ScrollButton = () => {
 
   return (
     <button
-      className={`fixed z-30 bottom-4 right-4 p-4 bg-black  border-[1px] border-grey-200 transition-opacity ${
+      className={`fixed z-30 bottom-4 right-4 p-4 bg-black shadow-lg border-[1px] border-grey-200 transition-opacity ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       onClick={scrollToTop}

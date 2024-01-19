@@ -8,7 +8,7 @@
 }
 
 body{
-  background-color: rgb(30, 29, 29);
+  background-color: #101010;
 }
 
 /* karantina-regular - latin */
@@ -95,6 +95,21 @@ body{
   font-weight: 400;
   src: url('../src/fonts/inika-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arizonia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/arizonia-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* beau-rivage-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Beau Rivage';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/beau-rivage-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 ::-webkit-scrollbar {
   width: 11px; 
@@ -119,14 +134,7 @@ body{
     transform: scale(1.1);
   }
 }
-/* .overlay{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: black;
-  top: 0;
-  
-} */
+
 .zoom-in-animation {
   animation: zoomIn 9s ease-in-out infinite;
 }
@@ -190,6 +198,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 
 #home-menu-container{
   background-image: url(./assets/landing.png);
