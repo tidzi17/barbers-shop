@@ -3,7 +3,6 @@ import HomeLanding from '../components/home-landing';
 import '../index.css';
 import HomeSectionFirst from '../components/home-section-first';
 import Services from '../components/services-href';
-import GalleryParallax from '../components/galleryParallax';
 import DiscountBanner from '../components/discountBanner';
 import WorkingHoursSection from '../components/workingHours';
 import image from '../assets/blackbg.png';
@@ -13,6 +12,9 @@ import HomePricesMenu from '../components/home-prices-section';
 import TeamMasters from '../components/masters-team';
 import BookingSection from '../components/bookingSection';
 import HomeGallery from '../components/home-gallery';
+import AboutSectionHome from '../components/aboutsection-home';
+import ShopSectionHome from '../components/shopHome';
+
 
 
 
@@ -27,7 +29,9 @@ export default function Home(){
      <HomePricesMenu />
     {/*  <WorkingHoursSection /> */}
      <DiscountBanner />
-     <GalleryParallax />
+     <AboutSectionHome />
+     <ShopSectionHome />
+   
      
      <Testimonials />
      <BookingSection />

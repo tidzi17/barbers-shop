@@ -8,7 +8,7 @@ import Button from './button';
 
 export default function HomePricesMenu(){
     return(
-        <Parallax bgImage={bgImage} strength={300} className='w-full h-[600px]   mb-20 brightness-100 py-7'>
+        <Parallax bgImage={bgImage} strength={300} className='w-full h-[600px]  brightness-100 py-7'>
             <div className='w-full h-full flex flex-col items-center'>
                 <div className='w-fit self-center flex flex-col items-center '>
                     <div className='w-[80px] h-[2px] bg-black '></div>
@@ -24,7 +24,7 @@ export default function HomePricesMenu(){
                      ))}
                      </div>
                 </div>
-                <Link target='blank' to="/services">  <Button text="View All" /></Link>
+                <Link target='blank' to="/services"><Button text="View All" /></Link>
             </div>
         </Parallax>
     )

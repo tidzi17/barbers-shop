@@ -34,25 +34,25 @@ export default function Navbar(){
         <nav style={{ backgroundColor: bgColor}} className="w-full fixed  z-20 flex justify-between px-6 items-center py-6 lg:py-6 lg:px-24 ">
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
-            <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-gray-400 lg:hidden"/>
+            <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-white lg:text-4xl"/>
             <Link to="/" className="text-4xl text-white font-serif font-thin">Masters
                 {/* <img src={logo} alt="logo" className="w-36 h-30 md1200:w-24 md1200:h-20" /> */}
             </Link>
         </div>
-        <div className="flex gap-8 ml-11 mt-2 md1200:ml-2 md1200:gap-4">
+      {/*   <div className="flex gap-8 ml-11 mt-2 md1200:ml-2 md1200:gap-4">
         {navlinks.map((d, i) => 
                  <Link key={i} to={d.link} className="hidden  uppercase text-gray-400 text-base hover:text-primaryOrange lg:block md1200:text-sm">{d.label}</Link>
                  )}
-        </div>
+        </div> */}
        </div>
         {/* sidebar mobile */}
-        <div  onClick={() => setMenu(false)} className={clsx("fixed h-full -translate-x-full transition-all w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 right-0 z-40", isSideMenuOpen && 'translate-x-0')}>
-             <div className="text-black bg-white flex flex-col absolute w-56 left-0 top-0 h-screen p-8 gap-8 z-50">
+        <div  onClick={() => setMenu(false)} className={clsx("fixed h-full -translate-x-full transition-all w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40", isSideMenuOpen && 'translate-x-0')}>
+             <div className="text-black bg-white flex flex-col absolute w-56 lg:w-64 left-0 top-0 h-screen p-10 gap-8 z-50 ">
                 <IoCloseOutline
                 onClick={() => setMenu(false)}
-                 className="mt-0 mb-8 text-3xl cursor-pointer" />
+                 className="mt-0 mb-8 text-3xl lg:text-4xl cursor-pointer" />
                 {navlinks.map((d, i) => 
-                 <Link key={i} to={d.link} className="font-bold">{d.label}</Link>
+                 <Link key={i} to={d.link} className="font-bold font-alumni uppercase text-2xl tracking-wider">{d.label}</Link>
                  )}
              </div>
         </div>

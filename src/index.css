@@ -245,6 +245,7 @@ body{
 .cta svg {
   transform: translateX(-8px);
   margin-bottom: 4px;
+  color: currentColor;
 }
 
 .cta:hover svg {
@@ -257,7 +258,7 @@ body{
 
 .hover-underline-animation {
   position: relative;
-  color: black;
+  /* color: black; */
   padding-bottom: 20px;
 }
 
@@ -269,7 +270,7 @@ body{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: currentColor;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
