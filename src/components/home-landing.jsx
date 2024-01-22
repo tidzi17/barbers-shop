@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import bgImage from '../assets/landing.png';
+/* import bgImage from '../assets/landing.png'; */
 import bgVideo from '../media/bgVideo.mp4';
 import '../index.css';
 
@@ -15,7 +15,7 @@ const HomeLanding = () => {
   }, []);
 
     return(
-        <div className='w-full h-[90vh] overflow-hidden relative'>
+        <div className='w-full h-[100vh] overflow-hidden relative'>
         <div
           className={`w-full h-100vh overflow-hidden ${
             zoomIn ? 'zoom-in-animation' : ''

@@ -11,7 +11,6 @@ export default function TeamMasters(){
             <div className='w-full h-[650px]  mt-10 flex gap-14 px-20'>
                 {data.masters.map((master, index) => (
                     <div key={index} className='text-white flex flex-col items-center text-center'>
-                        
                         <img src={master.url} alt="smdks" className={`w-full  object-cover  brightness-50 ${index % 2 === 0 ? 'h-[410px]' : 'h-[450px]'}`}/>
                         <p className='uppercase font-antonio text-3xl mt-5'>{master.name}</p>
                         <p className='font-rivage text-primaryOrange text-2xl'>{master.title}</p>

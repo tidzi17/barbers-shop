@@ -35,6 +35,7 @@ module.exports = {
           inika: ['Inika'],
           arizonia: ['Arizonia'],
           rivage: ['Beau Rivage'],
+          aboreto: ['Aboreto'],
          
         },
         height: {

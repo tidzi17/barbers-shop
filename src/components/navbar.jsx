@@ -59,7 +59,7 @@ export default function Navbar(){
         {/*  */}
         <div className="flex items-center gap-4">
             <AiOutlineShoppingCart className="text-3xl  text-gray-400 cursor-pointer" />
-            <button onClick={handleScroll} className="md1200:text-sm min800:hidden text-base font-mono text-white bg-zinc-900 hover:bg-zinc-800  ease-in-out px-2 py-2 shadow-lg">Book apointment</button>
+            <button onClick={handleScroll} className="md1200:text-sm min800:hidden rounded-lg text-base font-mono text-white bg-zinc-900 hover:bg-zinc-800  ease-in-out px-2 py-2 shadow-lg">Book apointment</button>
         </div>
       </nav>
       

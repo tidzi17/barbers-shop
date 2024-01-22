@@ -110,6 +110,14 @@ body{
   font-weight: 400;
   src: url('../src/fonts/beau-rivage-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* aboreto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Aboreto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/aboreto-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 ::-webkit-scrollbar {
   width: 11px; 
@@ -117,7 +125,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4a3602; 
+  background-color: #fff; 
   border-radius: 5px; 
 }
 
@@ -171,12 +179,12 @@ body{
   animation-delay: 1s;
 }
 
-#first-section{
+/* #first-section{
   background-image: url(./assets/blackbg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 #testimonials-section{
   background-image: url(./assets/darkwood.png);
