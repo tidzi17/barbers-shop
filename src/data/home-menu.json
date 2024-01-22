@@ -1,37 +1,124 @@
 {
-    "services": [
-      {
-        "name": "Hot Towel Shave",
-        "price": 25
-      },
-      {
-        "name": "Scalp Massage and Treatment",
-        "price": 30
-      },
-      {
-        "name": "Hair Design or Pattern",
-        "price": 40
-      },
-      {
-        "name": "Coloring Services",
-        "price": 50
-      },
-      {
-        "name": "Facial Treatments",
-        "price": 35
-      },
-      {
-        "name": "Moustache and Beard Styling",
-        "price": 20
-      },
-      {
-        "name": "Hair Tattoo or Etching",
-        "price": 45
-      },
-      {
-        "name": "Hair and Scalp Consultation",
-        "price": 15
-      }
-    ]
-  }
-  
+  "services": [
+    {
+      "name": "Hot Towel Shave",
+      "description": "Experience the ultimate relaxation with our hot towel shave service. Includes a soothing hot towel treatment and precision shaving for a smooth finish.",
+      "price": 25
+    },
+    {
+      "name": "Scalp Massage and Treatment",
+      "description": "Indulge in a rejuvenating scalp massage and treatment designed to enhance circulation, promote hair health, and relieve stress.",
+      "price": 30
+    },
+    {
+      "name": "Hair Design or Pattern",
+      "description": "Express your unique style with a personalized hair design or pattern. Our skilled barbers can create intricate and stylish designs tailored to your preferences.",
+      "price": 40
+    },
+    {
+      "name": "Coloring Services",
+      "description": "Transform your look with our professional coloring services. Whether you desire a subtle change or a bold new color, our experts will enhance your style.",
+      "price": 50
+    },
+    {
+      "name": "Facial Treatments",
+      "description": "Revitalize your skin with our facial treatments. Tailored to your skin type, these treatments leave your skin refreshed, hydrated, and glowing.",
+      "price": 35
+    },
+    {
+      "name": "Moustache and Beard Styling",
+      "description": "Craft the perfect look for your facial hair with our moustache and beard styling service. Our barbers will shape and style your beard to perfection.",
+      "price": 20
+    },
+    {
+      "name": "Hair Tattoo or Etching",
+      "description": "Make a statement with a hair tattoo or etching. Our skilled barbers can create intricate designs to add a unique and artistic touch to your hair.",
+      "price": 45
+    },
+    {
+      "name": "Hair and Scalp Consultation",
+      "description": "Consult with our experienced barbers for personalized advice on hair and scalp care. Learn about the best products and routines to maintain healthy hair and scalp.",
+      "price": 15
+    },
+    {
+      "name": "Virtual Hair Consultation",
+      "description": "Get personalized hair and style recommendations with a virtual consultation. Our expert barbers will guide you through hairstyle options and grooming tips.",
+      "price": 25
+    },
+    {
+      "name": "3D Hair Modeling",
+      "description": "Step into the future with our 3D hair modeling service. Visualize and customize your haircut in a virtual environment before making the cut.",
+      "price": 45
+    },
+    {
+      "name": "Hybrid Color Blending",
+      "description": "Blend colors seamlessly with our hybrid color blending technique. Achieve a natural and multidimensional hair color that suits your personality.",
+      "price": 55
+    },
+    {
+      "name": "Custom Scented Beard Oils",
+      "description": "Elevate your beard care routine with our custom scented beard oils. Choose from a variety of scents to keep your beard smelling fresh and inviting.",
+      "price": 25
+    },
+    {
+      "name": "Energy-Infused Scalp Treatment",
+      "description": "Revitalize your scalp and senses with our energy-infused scalp treatment. Experience a burst of freshness and rejuvenation during your grooming session.",
+      "price": 40
+    },
+    {
+      "name": "Tech-Enhanced Hair Etching",
+      "description": "Embrace technology with our tech-enhanced hair etching. Choose from a range of digital designs to add a futuristic and artistic touch to your hairstyle.",
+      "price": 50
+    },
+    {
+      "name": "Mindful Grooming Session",
+      "description": "Experience a mindful grooming session that focuses on relaxation and well-being. Includes meditation techniques to enhance your overall grooming experience.",
+      "price": 35
+    },
+    {
+      "name": "Express Refresh Package",
+      "description": "In a hurry? Try our express refresh package, including a quick haircut, facial spritz, and beard shaping to keep you looking sharp on the go.",
+      "price": 30
+    },
+    {
+      "name": "Funky Kids' Styles",
+      "description": "Transform your child's haircut into a fun and funky style. Our barbers specialize in creative kids' styles to make their experience enjoyable.",
+      "price": 18
+    },
+    {
+      "name": "Glow-in-the-Dark Hair Coloring",
+      "description": "Make a statement with glow-in-the-dark hair coloring. Stand out in the crowd with vibrant colors that come to life under UV light.",
+      "price": 60
+    },
+    {
+      "name": "Precision Clipper Art",
+      "description": "Elevate your haircut with precision clipper art. Our skilled barbers can create intricate designs and patterns for a unique and stylish look.",
+      "price": 35
+    },
+    {
+      "name": "Grooming Masterclass",
+      "description": "Join our grooming masterclass for an immersive experience. Learn professional grooming techniques, styling tips, and product recommendations from our experts.",
+      "price": 50
+    },
+    {
+      "name": "Platinum VIP Membership",
+      "description": "Enjoy exclusive benefits with our Platinum VIP Membership. Receive priority booking, complimentary services, and special discounts on all grooming sessions.",
+      "price": 100
+    },
+    {
+      "name": "Thermal Scalp Detox",
+      "description": "Detoxify your scalp with our thermal scalp detox treatment. Experience the benefits of heat therapy to cleanse, nourish, and promote a healthy scalp.",
+      "price": 40
+    },
+    {
+      "name": "Signature Fragrance Blending",
+      "description": "Create a personalized fragrance for your grooming experience. Our fragrance blending service allows you to choose scents that complement your style.",
+      "price": 30
+    },
+    {
+      "name": "Barber's Choice Makeover",
+      "description": "Leave your style in the hands of our expert barbers with the Barber's Choice Makeover. Be surprised with a customized haircut and grooming transformation.",
+      "price": 55
+    }
+  ]
+}

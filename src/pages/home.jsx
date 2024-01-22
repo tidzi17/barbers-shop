@@ -12,6 +12,8 @@ import BookForm from '../components/bookForm';
 import HomePricesMenu from '../components/home-prices-section';
 import TeamMasters from '../components/masters-team';
 import BookingSection from '../components/bookingSection';
+import HomeGallery from '../components/home-gallery';
+
 
 
 export default function Home(){
@@ -20,16 +22,16 @@ export default function Home(){
      <HomeLanding />
      <HomeSectionFirst />
      <Services />
-     <div className='w-full h-100vh'>
-        <img src={image} alt="somethign" className='w-full h-full object-cover' />
-     </div>
+     <HomeGallery />
+     <TeamMasters />
+     <HomePricesMenu />
     {/*  <WorkingHoursSection /> */}
      <DiscountBanner />
      <GalleryParallax />
-     <TeamMasters />
+     
      <Testimonials />
      <BookingSection />
-     <HomePricesMenu />
+     
      
     </>
   );
