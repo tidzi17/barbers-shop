@@ -9,7 +9,7 @@ export default function HomeGallery(){
     const galleryImages = data.gallery;
 
     return(
-        <div id="home-gallery-section" className='w-full h-[80vh] mt-20 bg-zinc-300'>
+        <div id="home-gallery-section" className='w-full h-[85vh] mt-20 bg-zinc-300'>
            <div className='w-full h-full flex'>
            <div className='w-1/2 h-full p-10'>
             <div className='w-[70px] h-[2px] bg-black'></div>

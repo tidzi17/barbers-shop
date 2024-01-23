@@ -54,7 +54,7 @@ export default function Footer(){
 
                 </div>
                 <div className="w-11/12 border-t-[1px] border-zinc-300 m-auto flex items-center pt-5">
-                    <p className="m-auto text-base font-mono text-zinc-500">&copy;Copyright 2024 All rights reserved</p>
+                    <p className="m-auto text-base font-sans text-zinc-500">&copy;Copyright 2024 All rights reserved</p>
                 </div>
             </h1>
         </div>

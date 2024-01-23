@@ -3,7 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 
 export default function BookingSection(){
     return(
-        <section id='booking-section' className='w-full px-10 h-[90vh]'>
+        <section id='booking-section' className='w-full px-10 h-[100vh]'>
           <div className="flex flex-col gap-7 justify-center item-center w-full h-full mt-16">
             <div className="w-1/2  text-white m-auto flex flex-col items-center text-center">
             <div className='w-[70px] h-[2px] bg-white text-white '></div>
