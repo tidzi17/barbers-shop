@@ -1,11 +1,10 @@
-import BookingSection from "../components/bookingSection";
 import landingimage from '../assets/landing.png'
 
 export default function Gallery(){
     return(
         <div>
          <div>
-        <img src={landingimage} className="w-full h-[70vh] object-cover grayscale relative"/>
+        <img src={landingimage} alt="landingimage" className="w-full h-[70vh] object-cover grayscale relative"/>
         <p className="absolute top-0 text-white mt-64 ml-12 font-mono text-8xl ">Our Gallery</p>
         </div>
         </div>

@@ -32,8 +32,3 @@ export default function HomeSectionFirst(){
         </section>
     )
 }
-
-{/* <div  className="flex justify-center flex-col items-center mt-20 pb-5">
-<p className="font-allison text-primaryOrange text-5xl">services</p>
-<p className="font-antonio text-white text-5xl">Popular services</p>
-</div> */}

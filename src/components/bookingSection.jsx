@@ -25,6 +25,3 @@ export default function BookingSection(){
      </section>
     )
 }
-
-{/* <h2 className="font-inika text-6xl">Make an appointment</h2>
-<p className="font-athiti text-xl mt-3">+367 846 8945</p> */}
