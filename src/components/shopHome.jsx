@@ -8,7 +8,7 @@ import { LiaLongArrowAltLeftSolid } from "react-icons/lia";
 export default function ShopSectionHome(){
     return(
         <div className="h-[90vh]">
-            <div className="w-full flex h-full">
+            <div className="w-full flex h-full mt-5">
             <div className='w-1/2 text-white mt-10 ml-7 mb-44'>
             <div className='w-[70px] h-[2px] bg-white'></div>
             <h2 className='mt-2 text-5xl font-alumni'>Visit our shop!</h2>

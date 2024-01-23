@@ -2,17 +2,21 @@
 
 export default function BookForm(){
     return(
-        <div>
-            <form className="flex flex-col w-[600px]  gap-5">
-                <div className="flex gap-3  w-[300px] h-[40px]">
-                <input type="date" placeholder="Date" className="bg-transparent border-b-[1px] border-gray-400 w-1/2"></input>
-                <input type="time" min="08:00" max="20:00" placeholder="Time" className="bg-transparent border-b-[1px] border-gray-400 w-1/2"></input>
-                </div>
-                <input type="text" placeholder="Name" className="bg-transparent border-b-[1px] border-gray-400 w-[300px] h-[40px]" name="name" id="name" />
-                <input type="tel" placeholder="PhoneNumber" className="bg-transparent border-b-[1px] border-gray-400  w-[300px] h-[40px]" name="" id="" />
-                <textarea placeholder="Message" className="bg-transparent border-b-[1px] border-gray-400 w-[300px] h-[60px]"></textarea>
+        <div className="w-full h-full">
+            <form action="" className="flex flex-col items-center w-full gap-4">
+            <div className="flex gap-3 w-full h-12">
+            <input type="date" placeholder="Date" className="w-1/2 bg-transparent  placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300"></input>
+            <input type="time" min="08:00" max="20:00" placeholder="Time" className="w-1/2 bg-transparent  placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300"></input>
+            </div>
+            <input type="text" name="name" id="name" placeholder="Your Name" className="w-full h-12 bg-transparent  placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300" />
+            <input type="tel" name="phonenum" id="phonenum" placeholder="Your Phone Number" className="w-full h-12 bg-transparent  placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300"/>
+            <textarea name="message" id="message" placeholder="Your message"  className="w-full h-32 bg-transparent placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300"></textarea>
+            <button type="submit" className="h-12 w-1/3 font-mono text-base bg-zinc-800 text-zinc-400 ">Send message</button>
             </form>
-            <button type="submit" className="bg-transparent border-[1px] border-gray-400 w-[300px] h-[60px] mt-5">Submit</button>
         </div>
     )
 }
+
+
+
+

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import reviewsData from '../data/reviews.json';
 import '../index.css';
 
+
 export default function Testimonials(){
     const [customerData, setCustomerData] = React.useState([]);
 
@@ -20,12 +21,12 @@ export default function Testimonials(){
     
     const generateTestimonialsJSX = () => {
         return customerData.map((customer, index) => (
-            <div key={index} className='flex flex-col h-70'>
-                <div className={`h-64 rounded-2xl z-10 flex items-center justify-center text-center px-5 shadow-2xl  ${index % 2 === 0 ? 'bg-secondaryBlack' : 'bg-brown'}`}>
+            <div key={index} className='flex flex-col h-80'>
+                <div className={`h-64  z-10 flex items-center justify-center text-center px-5   ${index % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-500'}`}>
                 <p className='text-white font-athiti text-base'>"{reviewsData.reviews[index]}"</p>
                 </div>
                 <div className='flex z-20 -mt-10'>
-                <img src={customer.picture.thumbnail} alt={customer.name.first} className='w-[60px] rounded-full opacity-60 ml-2' />
+                <img src={customer.picture.thumbnail} alt={customer.name.first} className='w-[60px] rounded-full  ml-2 grayscale' />
                 <h3 className=' text-white ml-10  font-athiti text-base'>{`${customer.name.first} ${customer.name.last}`}</h3>
                 </div>
             </div>
@@ -65,9 +66,12 @@ export default function Testimonials(){
     };
     
     return(
-        <div id='testimonials-section' className='w-full h-[700px] flex flex-col items-center '>
-        <h1 className='text-white text-5xl mt-16 font-athiti'>Testimonials</h1>
-        <div className='w-8/12 mt-36 '>
+        <div id='testimonials-section'  className='w-full h-[700px] flex flex-col items-center bg-zinc-400'>
+        <div className='w-full h-fit flex flex-col items-center justify-center mt-16'>
+          <div className='w-[70px] h-[2px] bg-black self-center'></div>
+        <h1 className='text-black text-5xl font-alumni'>Testimonials</h1>
+        </div>
+        <div className='w-9/12 mt-28 '>
         <Slider {...settings}>
         {generateTestimonialsJSX()}
         </Slider>

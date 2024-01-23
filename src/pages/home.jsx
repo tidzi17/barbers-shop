@@ -14,6 +14,8 @@ import BookingSection from '../components/bookingSection';
 import HomeGallery from '../components/home-gallery';
 import AboutSectionHome from '../components/aboutsection-home';
 import ShopSectionHome from '../components/shopHome';
+import Map from '../components/contact-page/map'
+import ImageBanner from '../components/imagebanner';
 
 
 
@@ -31,12 +33,7 @@ export default function Home(){
      <DiscountBanner />
      <AboutSectionHome />
      <ShopSectionHome />
-   
-     
      <Testimonials />
-     <BookingSection />
-     
-     
     </>
   );
 };

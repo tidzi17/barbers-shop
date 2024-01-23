@@ -12,7 +12,6 @@ export default function Contact(){
         </div>
         <ContactSection />
         <Map />
-        <BookingSection />
         </div>
     )
 }

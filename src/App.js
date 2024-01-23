@@ -10,6 +10,8 @@ import Contact from './pages/contact';
 import Shop from './pages/shop';
 import Footer from './components/footer';
 import ScrollButton from './components/scroll-button';
+import ImageBanner from './components/imagebanner';
+import BookingSection from './components/bookingSection';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
     <Route path="/shop" exact element={<Shop/>} />
     {/* <Route path='*' element={<NotFound />}/> */}
     </Routes>
+    <BookingSection />
+    <ImageBanner />
     <Footer />
     
   </>
