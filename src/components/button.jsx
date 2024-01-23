@@ -3,9 +3,9 @@ import React from 'react';
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 
 
-const Button = ({ text, textColor }) => {
+const Button = ({ text, textColor,  onClick }) => {
     return (
-        <button className="cta flex items-center justify-center">
+        <button className="cta flex items-center justify-center" onClick={onClick}>
             <span className={`hover-underline-animation uppercase text-sm pr-3 ${textColor || 'text-black'}`}>
                 {text}
             </span>

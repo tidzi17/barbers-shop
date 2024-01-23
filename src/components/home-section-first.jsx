@@ -1,5 +1,4 @@
 import React from "react";
-import random from '../assets/first.jpeg';
 
 export default function HomeSectionFirst(){
     return(

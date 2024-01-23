@@ -36,6 +36,7 @@ module.exports = {
           arizonia: ['Arizonia'],
           rivage: ['Beau Rivage'],
           aboreto: ['Aboreto'],
+          honeymoon: ['Honeymoon'],
          
         },
         height: {

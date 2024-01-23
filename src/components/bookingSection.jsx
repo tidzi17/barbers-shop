@@ -20,8 +20,6 @@ export default function BookingSection(){
         <BookForm />
       </div>
           </div>
-    
-  
      </section>
     )
 }
