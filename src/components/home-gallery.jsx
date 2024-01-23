@@ -18,10 +18,10 @@ export default function HomeGallery(){
             <p className='mt-4 text-base mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum reprehenderit tempora voluptatem modi in vel laudantium distinctio atque natus iste minima eaque fuga a illo quaerat, possimus magni beatae.</p>
             <Button text="Explore"/>
            </div>
-           <div className='w-1/2 h-full grid grid-cols-3  gap-2 p-10 overflow-hidden  relative'>
+           <div className='w-1/2 h-full grid grid-cols-3 grid-rows-3  gap-2 p-10 overflow-hidden  relative'>
             {galleryImages.slice(5, 14).map((image, index) => (
                 <Link target='blank' to="/gallery">
-                 <img key={index} src={image} alt='gallery-img' className=" w-full overflow-hidden h-[190px] object-cover transition-transform duration-500 ease-in-out  transform hover:scale-105 grayscale cursor-pointer"/>
+                 <img key={index} src={image} alt='gallery-img' className="w-full overflow-hidden h-full object-cover transition-transform duration-500 ease-in-out  transform hover:scale-105 grayscale cursor-pointer"/>
                  </Link>
             ))}
            </div>
