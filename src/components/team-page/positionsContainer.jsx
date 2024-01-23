@@ -10,8 +10,8 @@ export default function PositionsContainer({title,  requirements, description, b
     
     return(
         <div  className='relative'>
-            <div className='flex justify-between border-[1px] bg-black/80 text-zinc-400 border-black rounded-lg px-3 py-2'>
-                <p className='text-2xl font-serif font-light '>{title}</p>
+            <div className='flex justify-between border-[1px] bg-black/50 text-zinc-300 border-black  px-3 py-2'>
+                <p className='text-2xl font-sans font-light '>{title}</p>
                 <button onClick={toggleVisibility} className='font-mono text-3xl transition-all duration-500 ease-in  hover:rotate-90'>+</button>
             </div>
             {isVisible && (

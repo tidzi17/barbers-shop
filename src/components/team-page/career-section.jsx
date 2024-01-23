@@ -9,12 +9,13 @@ export default function CareerSection(){
         <Parallax  
         bgImage={bgImage} 
         strength={300}>
-        <div  className="w-full bg-white/50 border-y-[1px] border-zinc-500  text-black">
-            <div className="flex h-full">
-            <div className="w-1/2 m-20">
-                <div>
-                    <h2 className='text-3xl font-inika'>Interested in Joining Us?</h2>
-                    <h2 className='text-5xl font-inika'>Check out open positions!</h2>
+        <div  className="w-full  p-28 text-black">
+            <div className="flex h-full ">
+            <div className="w-1/2 m-auto">
+                <div className='w-fit m-auto text-center text-white mb-10'>
+                <div className='w-[70px] h-[2px] bg-white m-auto'></div>
+                    <h2 className='mt-2 text-5xl font-alumni'>Interested in Joining Us?</h2>
+                    <h2 className='mt-2 text-4xl font-alumni'>Check out open positions!</h2>
              </div>
              <div className='flex flex-col gap-6 mt-8'>
              {data.careers.map((career, index) => (
@@ -23,9 +24,9 @@ export default function CareerSection(){
              </div>
          
             </div>
-            <div className=' flex justify-center text-center bg-black/90 text-white'>
+           {/*  <div className=' flex justify-center text-center text-black'>
                 <p className='w-1/2 m-auto font-serif italic text-3xl'>“Success is not final, failure is not fatal: It is the courage to continue that counts.”<br></br>- Winston Churchill</p>
-            </div>
+            </div> */}
             </div>
         </div>
         </Parallax>
