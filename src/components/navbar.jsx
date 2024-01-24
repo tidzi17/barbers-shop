@@ -34,16 +34,11 @@ export default function Navbar(){
         <nav style={{ backgroundColor: bgColor}} className="w-full fixed  z-20 flex justify-between px-6 items-center py-6 lg:py-6 lg:px-24 ">
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
-            <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-white lg:text-4xl"/>
-            <Link to="/" className="text-4xl text-white font-serif font-thin">Masters
-                {/* <img src={logo} alt="logo" className="w-36 h-30 md1200:w-24 md1200:h-20" /> */}
+            <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-zinc-200 lg:text-4xl"/>
+            <Link to="/" className="text-4xl text-zinc-200 font-serif font-thin">Masters
+                
             </Link>
         </div>
-      {/*   <div className="flex gap-8 ml-11 mt-2 md1200:ml-2 md1200:gap-4">
-        {navlinks.map((d, i) => 
-                 <Link key={i} to={d.link} className="hidden  uppercase text-gray-400 text-base hover:text-primaryOrange lg:block md1200:text-sm">{d.label}</Link>
-                 )}
-        </div> */}
        </div>
         {/* sidebar mobile */}
         <div  onClick={() => setMenu(false)} className={clsx("fixed h-full -translate-x-full transition-all w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40", isSideMenuOpen && 'translate-x-0')}>
@@ -58,8 +53,8 @@ export default function Navbar(){
         </div>
         {/*  */}
         <div className="flex items-center gap-4">
-            <AiOutlineShoppingCart className="text-3xl  text-gray-400 cursor-pointer" />
-            <button onClick={handleScroll} className="md1200:text-sm min800:hidden rounded-lg text-base font-mono text-white bg-zinc-900 hover:bg-zinc-800  ease-in-out px-2 py-2 shadow-lg">Book apointment</button>
+            <AiOutlineShoppingCart className="text-3xl  text-zinc-200 cursor-pointer" />
+          <div className="nav-button-container"><button onClick={handleScroll} className="nav-button ">Book apointment</button></div> 
         </div>
       </nav>
       
@@ -97,3 +92,4 @@ const navlinks = [
         link: "/contact"
     },
 ]
+

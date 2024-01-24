@@ -5,7 +5,7 @@ import Button from '../button';
 export default function AboutFirstSection(){
     return(
         <div className='w-full h-[85vh]  p-10 '>
-        <div className="flex  w-full h-full justify-around mt-5">
+        <div className="flex  w-full h-full justify-around my-5">
         <div className='w-1/2 h-full py-10 text-zinc-300'>
         <div className='w-[70px] h-[2px] bg-zinc-300'></div>
         <h2 className='mt-2 text-5xl font-alumni'>About Us!</h2>

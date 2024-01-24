@@ -346,6 +346,171 @@ body{
 }
 
 
+/* NAV BUTTON */
+.nav-button-container{
+  perspective: 500px;
+  transform: rotatex(10deg);
+  animation: rotateAngle 6s linear infinite;
+  margin: auto;
+  width: auto;
+}
+
+.nav-button{
+  display: block;
+  position: relative;
+  margin: 0.5em 0;
+  padding: 0.8em 2.2em;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  mix-blend-mode: color-dodge;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.nav-button:before, .nav-button:after {
+  --z: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  mix-blend-mode: inherit;
+  border-radius: inherit;
+  transform-style: preserve-3d;
+  transform: translate3d(calc(var(--z) * 0px), calc(var(--z) * 0px), calc(var(--z) * 0px));
+ }
+
+ .nav-button span {
+  mix-blend-mode: none;
+  display: block;
+ }
+ 
+ .nav-button:after {
+  background-color: rgb(28, 23, 23);
+ }
+ 
+ .nav-button:before {
+  background-color: rgb(18, 17, 17);
+ }
+
+ .nav-button:hover {
+  background-color: rgb(15, 15, 15);
+  transition: background-color 0.5s 0.3s;
+  color: white;
+  font-weight: 100;
+ }
+ 
+ .nav-button:hover:before {
+  --z: 0.04;
+  animation: translateWobble 2.2s ease forwards;
+ }
+ 
+ .nav-button:hover:after {
+  --z: -0.06;
+  animation: translateWobble 2.2s ease forwards;
+ }
+ @keyframes rotateAngle {
+  0% {
+   transform: rotateY(0deg) rotateX(10deg);
+   -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+   animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+  }
+ 
+  25% {
+   transform: rotateY(20deg) rotateX(10deg);
+  }
+ 
+  50% {
+   transform: rotateY(0deg) rotateX(10deg);
+   -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+   animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+  }
+ 
+  75% {
+   transform: rotateY(-20deg) rotateX(10deg);
+  }
+ 
+  100% {
+   transform: rotateY(0deg) rotateX(10deg);
+  }
+ }
+ 
+ @keyframes translateWobble {
+  0% {
+   opacity: 0;
+   transform: translate3d(calc(var(--z) * 0px), calc(var(--z) * 0px), calc(var(--z) * 0px));
+  }
+ 
+  16% {
+   transform: translate3d(calc(var(--z) * 160px), calc(var(--z) * 160px), calc(var(--z) * 160px));
+  }
+ 
+  28% {
+   opacity: 1;
+   transform: translate3d(calc(var(--z) * 70px), calc(var(--z) * 70px), calc(var(--z) * 70px));
+  }
+ 
+  44% {
+   transform: translate3d(calc(var(--z) * 130px), calc(var(--z) * 130px), calc(var(--z) * 130px));
+  }
+ 
+  59% {
+   transform: translate3d(calc(var(--z) * 85px), calc(var(--z) * 85px), calc(var(--z) * 85px));
+  }
+ 
+  73% {
+   transform: translate3d(calc(var(--z) * 110px), calc(var(--z) * 110px), calc(var(--z) * 110px));
+  }
+ 
+  88% {
+   opacity: 1;
+   transform: translate3d(calc(var(--z) * 90px), calc(var(--z) * 90px), calc(var(--z) * 90px));
+  }
+ 
+  100% {
+   opacity: 1;
+   transform: translate3d(calc(var(--z) * 100px), calc(var(--z) * 100px), calc(var(--z) * 100px));
+  }
+ }
+ 
+ /* ANIMATIONS */
+
+
+ .landing-header {
+  transform: translateX(-100%);
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+
+
+.home-gallery-section-images {
+  animation: slideInFromRight 1s forwards; /* Adjust the duration as needed */
+}
 /* <!-- HTML !-->
 <button class="button-56" role="button">Button 56</button>
 

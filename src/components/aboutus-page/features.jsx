@@ -25,7 +25,7 @@ export default function FeaturesSection(){
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} className="w-11/12 h-full m-auto flex justify-between  gap-5 mt-20">
                     <div className='w-1/3 h-[20vh]  flex'>
                         <div className='w-1/2 h-full border-r-[1px] border-white flex items-center'>
-                            <p className='float-right ml-auto font-aboreto text-4xl pr-5'>{couterOn && <CountUp start={0} end={20} duration={4} delay={0}/>}+</p>
+                            <p className='float-right ml-auto font-aboreto text-4xl pr-5'>{couterOn && <CountUp start={0} end={29} duration={4} delay={0}/>}</p>
                         </div>
                         <div className='w-1/2 h-full  flex items-center'>
                             <p className='text-4xl font-aboreto pl-5'>Years of <br></br>Service</p>

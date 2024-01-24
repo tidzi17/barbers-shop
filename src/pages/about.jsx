@@ -18,7 +18,7 @@ export default function About(){
         </div>
         <AboutFirstSection />
         <HomePricesMenu/>
-        <FeaturesSection />
+        <FeaturesSection/>
        
         <MasterSection />
        
