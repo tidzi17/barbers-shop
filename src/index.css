@@ -346,8 +346,10 @@ body{
 }
 
 .gallery{
-  column-count: 3;
-  column-width: 33%;
+  -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
   padding: 0 12px;
   margin: 0 auto;
 }
