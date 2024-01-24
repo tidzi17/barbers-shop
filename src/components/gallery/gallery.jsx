@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef,  useEffect } from 'react';
 import { BsChevronCompactRight } from "react-icons/bs"; //next
 import { BsChevronLeft } from "react-icons/bs"; //prev
 import { RxCross1 } from "react-icons/rx"; //exit
@@ -7,6 +7,7 @@ const ImageGallery = ({ galleryImages }) => {
 
     const [slideNumber, setSlideNumber] = useState(0);
     const [openModal, setOpenModal] = useState(false);
+    const touchStartX = useRef(null);
 
     const handleOpenModal = (index) => {
         setSlideNumber(index)
@@ -26,11 +27,46 @@ const ImageGallery = ({ galleryImages }) => {
         ? setSlideNumber(0) 
         : setSlideNumber( slideNumber + 1 )
     }
+
+    const handleTouchStart = (e) => {
+        touchStartX.current = e.touches[0].clientX;
+      };
+    
+      const handleTouchEnd = (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const deltaX = touchEndX - touchStartX.current;
+    
+        if (deltaX > 50) {
+          prevSlide();
+        } else if (deltaX < -50) {
+          nextSlide();
+        }
+      };
+    
+      const handleKeyDown = (e) => {
+        if (e.key === 'ArrowLeft') {
+          prevSlide();
+        } else if (e.key === 'ArrowRight') {
+          nextSlide();
+        }
+      };
+
+      useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+    
+        return () => {
+          document.removeEventListener('keydown', handleKeyDown);
+        };
+      }, [slideNumber]);
+
     
     return(
-        <div className='px-20 py-20'>
+        <div className='px-20 py-20 md1000:px-10    '>
             {openModal && 
-            <div className='fixed h-screen w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40 scroll-m-0 flex items-center justify-center' >
+            <div className='fixed h-screen w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40 scroll-m-0 flex items-center justify-center'
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd} >
+            
             <RxCross1  className='top-[40px] right-[80px] text-3xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={handleCloseModal}/>
             <BsChevronLeft className='top-[50%] transform -translate-y-[50%] left-[40px] text-5xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={prevSlide}/>
             <BsChevronCompactRight className='top-[50%] transform -translate-y-[50%] right-[40px]  text-5xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={nextSlide} />

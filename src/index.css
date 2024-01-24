@@ -353,6 +353,7 @@ body{
   -moz-column-width: 33%;
   column-width: 33%;
   padding: 0 12px;
+  margin: 0 auto;
 }
 
 .gallery .pics{
