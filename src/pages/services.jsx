@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import landingimage from '../assets/landing.png'
+import ServicesSection from '../components/services-page/services'
 
 
 
@@ -14,6 +15,7 @@ export default function Services(){
             <Link to="/" className='font-mono uppercase text-2xl'>Home</Link>
         </div>
         </div>
+        <ServicesSection />
       
         </div>
     )

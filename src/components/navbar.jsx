@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoCloseOutline } from "react-icons/io5";
 import clsx from "clsx";
-import logo from '../assets/logo1.png';
 
 export default function Navbar(){
     const [isSideMenuOpen, setMenu] = useState(false);

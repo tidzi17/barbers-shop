@@ -17,7 +17,7 @@ export default function HomeGallery(){
             <h2 className='mt-2 text-5xl font-alumni'>Explore our work</h2>
             <h3 className=' mt-2 text-4xl font-alumni'>Check out our portfolio gallery!</h3>
             <p className='mt-4 text-base mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum reprehenderit tempora voluptatem modi in vel laudantium distinctio atque natus iste minima eaque fuga a illo quaerat, possimus magni beatae.</p>
-            <Button text="Explore"/>
+           <Link target='blank' to="/gallery"><Button text="Explore"/></Link> 
            </div>
            <div id="home-gallery-section-images" className='home-gallery-section-images w-1/2 h-full grid grid-cols-3 grid-rows-3  gap-2 p-10 overflow-hidden  relative'>
             {galleryImages.slice(5, 14).map((image, index) => (

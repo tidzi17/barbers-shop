@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom'
 import landingimage from '../assets/landing.png'
+import ImageGallery from '../components/gallery/gallery'
+import data from '../data/gallery.json';
 
 
 export default function Gallery(){
+    const galleryImages = data.gallery;
+
     return(
         <div>
          <div>
@@ -13,6 +17,7 @@ export default function Gallery(){
             <Link to="/" className='font-mono uppercase text-2xl'>Home</Link>
         </div>
         </div>
+        <ImageGallery galleryImages={galleryImages} />
         </div>
     )
 }

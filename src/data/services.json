@@ -1,6 +1,81 @@
 {
   "services": [
     {
+      "name": "Traditional Haircut",
+      "description": "A timeless haircut that includes scissor or clipper cutting to achieve a clean and classic look.",
+      "price": 25
+    },
+    {
+      "name": "Classic Shave",
+      "description": "A traditional straight razor shave that includes pre-shave oils, hot towels, and a post-shave facial massage.",
+      "price": 30
+    },
+    {
+      "name": "Beard Trim",
+      "description": "Precision trimming and shaping of the beard to maintain a well-groomed and tidy appearance.",
+      "price": 15
+    },
+    {
+      "name": "Buzz Cut",
+      "description": "A short and uniform haircut achieved using clippers, providing a clean and low-maintenance style.",
+      "price": 20
+    },
+    {
+      "name": "Fade Haircut",
+      "description": "A popular men's haircut that gradually fades from short to longer hair, creating a stylish and modern look.",
+      "price": 30
+    },
+    {
+      "name": "Hot Towel Shave",
+      "description": "Experience the luxury of a hot towel shave, combining warm towels and a straight razor for a smooth and relaxing shave.",
+      "price": 35
+    },
+    {
+      "name": "Crew Cut",
+      "description": "A short and tapered haircut, often characterized by a longer top and shorter sides, providing a neat and classic appearance.",
+      "price": 25
+    },
+    {
+      "name": "Mustache Trim",
+      "description": "Precision trimming and shaping of the mustache to achieve a defined and well-maintained look.",
+      "price": 10
+    },
+    {
+      "name": "Pompadour Haircut",
+      "description": "A classic men's hairstyle characterized by a high volume of hair swept upward from the face, often combined with shorter sides.",
+      "price": 35
+    },
+    {
+      "name": "Side Part Haircut",
+      "description": "A distinguished haircut featuring a clean side part, suitable for a polished and professional appearance.",
+      "price": 30
+    },
+    {
+      "name": "Razor Lineup",
+      "description": "Precision outlining of the hairline and beard using a straight razor for sharp and clean edges.",
+      "price": 15
+    },
+    {
+      "name": "Comb Over",
+      "description": "A classic and versatile hairstyle where hair is combed to one side, offering a sophisticated and timeless look.",
+      "price": 25
+    },
+    {
+      "name": "High and Tight",
+      "description": "A military-inspired haircut with short sides and back, providing a neat and low-maintenance style.",
+      "price": 20
+    },
+    {
+      "name": "Classic Taper Cut",
+      "description": "A haircut that gradually decreases in length, creating a tapered and blended appearance for a polished look.",
+      "price": 30
+    },
+    {
+      "name": "Neck Shave and Cleanup",
+      "description": "A quick and precise shave on the neck area to maintain a clean and well-groomed neckline between haircuts.",
+      "price": 10
+    },
+    {
       "name": "Hot Towel Shave",
       "description": "Experience the ultimate relaxation with our hot towel shave service. Includes a soothing hot towel treatment and precision shaving for a smooth finish.",
       "price": 25
@@ -114,11 +189,7 @@
       "name": "Signature Fragrance Blending",
       "description": "Create a personalized fragrance for your grooming experience. Our fragrance blending service allows you to choose scents that complement your style.",
       "price": 30
-    },
-    {
-      "name": "Barber's Choice Makeover",
-      "description": "Leave your style in the hands of our expert barbers with the Barber's Choice Makeover. Be surprised with a customized haircut and grooming transformation.",
-      "price": 55
     }
+   
   ]
 }
