@@ -61,7 +61,7 @@ const ImageGallery = ({ galleryImages }) => {
 
     
     return(
-        <div className='px-20 py-20 md1000:px-10    '>
+        <div className='px-20 py-20 md1000:px-10 '>
             {openModal && 
             <div className='fixed h-screen w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40 scroll-m-0 flex items-center justify-center'
             onTouchStart={handleTouchStart}
