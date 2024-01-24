@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import data from '../../data/gallery.json';
 import { BsChevronCompactRight } from "react-icons/bs"; //next
 import { BsChevronLeft } from "react-icons/bs"; //prev
 import { RxCross1 } from "react-icons/rx"; //exit
@@ -29,7 +28,7 @@ const ImageGallery = ({ galleryImages }) => {
     }
     
     return(
-        <div>
+        <div className='px-20 py-20'>
             {openModal && 
             <div className='fixed h-screen w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40 scroll-m-0 flex items-center justify-center' >
             <RxCross1  className='top-[40px] right-[80px] text-3xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={handleCloseModal}/>
@@ -41,14 +40,14 @@ const ImageGallery = ({ galleryImages }) => {
                 </div>
                 }
 
-            <div className='mt-20 flex flex-wrap  justify-center content-start  max-w-full m-auto'>
+            <div className='gallery '>
                 {
                     galleryImages && galleryImages.map((slide, index) => {
                         return(
-                            <div className='cursor-pointer max-w-[400px] '
+                            <div className='pics'
                              key={index} 
                              onClick={ () => handleOpenModal(index)}>
-                                <img src={slide} alt="" className='max-w-full  grayscale overflow-hidden transform-all duration-500 ease-in hover:scale-105'/>
+                                <img src={slide} alt="" className='grayscale'/>
                             </div>
                         )
                     })
