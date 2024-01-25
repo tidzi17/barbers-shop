@@ -11,6 +11,10 @@ body{
   background-color: #101010;
 }
 
+video::-webkit-media-controls {
+  display: none;
+}
+
 /* karantina-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -349,7 +353,6 @@ body{
   -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-
   padding: 0 12px;
   margin: 0 auto;
 }

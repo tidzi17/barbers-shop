@@ -31,7 +31,7 @@ const HomeLanding = () => {
         >
           <video src={bgVideo} autoPlay loop muted className="w-full h-full object-cover  grayscale brightness-50" alt="Background" />
         </div>
-        <div className="landing-header absolute overflow-hidden  top-0 flex flex-col w-2/3 ml-20 mt-64">
+        <div className="landing-header absolute overflow-hidden top-[35%] flex flex-col w-2/3 ml-20 ">
        <h1 className="font-alumni text-7xl  text-zinc-300 z-10 md1200:text-5xl">
        Crafting Timeless Styles Since '95. <br></br> Discover the Expertise of Masters Barbershop.
           </h1>
