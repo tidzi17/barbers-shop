@@ -13,7 +13,7 @@ export default function ShopSectionHome(){
             <div className='w-[70px] h-[2px] bg-white'></div>
             <h2 className='mt-2 text-5xl font-alumni'>Visit our shop!</h2>
             <h3 className=' mt-2 text-4xl font-alumni'>Check out best products for you hair, beard and skincare!</h3>
-            <p className=' mt-4 text-base mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum reprehenderit tempora voluptatem modi in vel laudantium distinctio atque natus iste minima eaque fuga a illo quaerat, possimus magni beatae.</p>
+            <p className=' mt-4 text-base mb-10'>Explore our selection of premium grooming products carefully curated to enhance your grooming routine. From top-quality shampoos and conditioners to luxurious beard oils and skincare essentials, we have everything you need to keep your look sharp and your skin healthy. Discover the perfect products tailored to your needs and elevate your grooming game with Masters Barbershop. Stop by today and let our knowledgeable team assist you in finding the ideal products for your grooming regimen.</p>
             <Link target='blank' to="/shop" ><Button text="Explore" textColor="text-white" /></Link> 
            </div>
            <div className="flex w-1/2 items-center  justify-around h-full pt-20">

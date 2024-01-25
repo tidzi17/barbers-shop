@@ -8,7 +8,7 @@ export default function ServicesSection(){
                 <div className='w-[70px] h-[2px] bg-zinc-300 '></div>
         <h2 className='mt-2 text-5xl font-alumni self-center m-auto'>Our Services</h2>
         <h3 className=' mt-2 text-4xl font-alumni'>All prices and services</h3>
-        <p className='mt-4 text-base mb-10 font-sans font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum reprehenderit tempora voluptatem modi in vel laudantium distinctio atque natus iste minima eaque fuga a illo quaerat, possimus magni beatae.</p>
+        <p className='mt-4 text-base mb-10 font-sans font-light'>At Masters Barbershop, we prioritize your comfort and satisfaction above all else. Our skilled barbers are dedicated to providing you with a personalized experience that leaves you looking and feeling your absolute best. Explore our services menu below and treat yourself to the ultimate grooming experience.</p>
                 </div>
             <div className='grid grid-cols-2 gap-7 w-full h-full p-10 '>
                       {data.services.map((service, index) => (

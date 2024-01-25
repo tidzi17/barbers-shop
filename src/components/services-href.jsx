@@ -33,18 +33,18 @@ export default function Services(){
 const PopularServices = [
     {
         image: first,
-        title: "Something",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor ex ea architecto minus placeat tenetur."
+        title: "Classic Haircut",
+        text: "Our Classic Haircut service offers precision and style, ensuring a sharp and timeless look tailored to your preferences."
     },
     {
         image: second,
-        title: "Something",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor ex ea architecto minus placeat tenetur."
+        title: "Beard Trim",
+        text: "Experience our Beard Trim service for a groomed and polished appearance. Our expert barbers will shape and style your beard to perfection."
     },
     {
         image: third,
-        title: "Something",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor ex ea architecto minus placeat tenetur."
+        title: "Skin Fade",
+        text: "Elevate your hairstyle with our Skin Fade service, creating a sleek and modern appearance with expert blending and precision cutting techniques."
     },
     
 ]

@@ -9,7 +9,7 @@ export default function BookingSection(){
             <div className='w-[70px] h-[2px] bg-white text-white '></div>
             <h2 className='mt-2 text-5xl font-alumni'>Make an appointment!</h2>
             <h3 className=' mt-2 text-4xl font-alumni'>Fill out the form and book your next appointment!</h3>
-            <p className='mt-4 text-base text-zinc-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum repatae.</p>
+            <p className='mt-4 text-base text-zinc-500'>Ready to elevate your grooming experience? Simply fill out the form below to schedule your next appointment at Masters Barbershop. Whether you're in need of a classic haircut, a beard trim, or a refreshing shave, our expert barbers are here to provide you with top-notch service tailored to your preferences.</p>
           <div className="flex items-center gap-4 mt-2">
           <FaPhone  className="text-md"/>
           <p className="text-md">+365 554 555</p>

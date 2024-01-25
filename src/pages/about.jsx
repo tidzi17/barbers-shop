@@ -4,6 +4,7 @@ import AboutFirstSection from '../components/aboutus-page/firstsection'
 import FeaturesSection from '../components/aboutus-page/features'
 import HomePricesMenu from '../components/home-prices-section'
 import { Link } from 'react-router-dom'
+import SecondSectionA from '../components/aboutus-page/secondsection'
 
 export default function About(){
     return(
@@ -17,7 +18,7 @@ export default function About(){
         </div>
         </div>
         <AboutFirstSection />
-        <HomePricesMenu/>
+        <SecondSectionA />
         <FeaturesSection/>
        
         <MasterSection />

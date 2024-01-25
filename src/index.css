@@ -203,7 +203,14 @@ video::-webkit-media-controls {
   background-repeat: no-repeat;
   background-size: cover;
 }
- 
+
+/* .about-section-second{
+  background-image: url(./assets/whitewood.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  */
 /* #booking-section{
   background-image: url(./assets/blackbg.png);
   background-position: center;

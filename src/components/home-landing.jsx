@@ -35,7 +35,7 @@ const HomeLanding = () => {
        <h1 className="font-alumni text-7xl  text-zinc-300 z-10 md1200:text-5xl">
        Crafting Timeless Styles Since '95. <br></br> Discover the Expertise of Masters Barbershop.
           </h1>
-          <p className='w-1/2 mt-5 text-md font-sans text-zinc-200 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, omnis ratione labore nam sed consequatur laborum in, maxime minima tempore aspernatur nobis, beatae quod repellat quae vitae! Omnis, excepturi nam.</p>
+          <p className='w-1/2 mt-5 text-md font-sans text-zinc-200 font-light'>Unveil the mastery behind each haircut at Masters Barbershop. With dedication and precision, our skilled barbers have been crafting impeccable styles since 1995. Our commitment to excellence ensures that every client receives the finest grooming experience possible.</p>
           <div className='flex gap-10 mt-10'>
           <button onClick={handleScroll} className=' px-3 py-3 border-[1px] border-zinc-200 text-zinc-200 text-base'>Book Apointment</button>
       <Link to="/services"><button   className=' px-3 py-3 border-[1px] border-zinc-200 text-zinc-200 text-base'>Our Services</button> </Link>

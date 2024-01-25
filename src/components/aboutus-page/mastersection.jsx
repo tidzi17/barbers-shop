@@ -12,7 +12,7 @@ export default function MasterSection(){
             <div className='w-[70px] h-[2px] bg-black'></div>
             <h2 className='mt-2 text-5xl font-alumni'>John Barberfield</h2>
             <h3 className=' mt-2 text-4xl font-alumni'>Owner and Founder of "Masters" & Head Barber</h3>
-            <p className='mt-4 text-base mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum reprehenderit tempora voluptatem modi in vel laudantium distinctio atque natus iste minima eaque fuga a illo quaerat, possimus magni beatae.</p>
+            <p className='mt-4 text-base mb-10'>Meet John Barberfield, the visionary behind Masters Barbershop. As the inheritor of his father's legacy, John has continued the tradition of excellence, infusing it with his own passion and expertise. With over two decades of experience, John leads our team of dedicated barbers with a commitment to precision, innovation, and customer satisfaction. Experience the artistry of John and his team at Masters, where every haircut is a masterpiece.</p>
            <h1 className='font-allison text-8xl mt-3 font-light text-zinc-800'>John  Barberfield</h1>
            </div>                       
                 <div className='w-1/3 h-full'>

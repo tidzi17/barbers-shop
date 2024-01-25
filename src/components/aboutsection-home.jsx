@@ -12,7 +12,7 @@ export default function AboutSectionHome(){
             <div className='w-[70px] h-[2px] bg-black'></div>
             <h2 className='mt-2 text-5xl font-alumni'>Meet our Team!</h2>
             <h3 className=' mt-2 text-4xl font-alumni'>Check out our team members and explore career!</h3>
-            <p className='mt-4 text-base mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum reprehenderit tempora voluptatem modi in vel laudantium distinctio atque natus iste minima eaque fuga a illo quaerat, possimus magni beatae.</p>
+            <p className='mt-4 text-base mb-10'>Get to know the talented individuals who bring passion and expertise to Masters Barbershop. Our team members are dedicated to providing exceptional service and creating confident looks for our clients. Explore career opportunities with us and join a team that values creativity, professionalism, and a commitment to excellence. At Masters Barbershop, we're not just a team; we're a family, united by our love for the craft of barbering.</p>
            <Link target='blank' to="/team"><Button text="Explore"/></Link> 
            </div>
                 <div className='w-1/3 h-full'>

@@ -16,7 +16,7 @@ export default function HomeGallery(){
             <div className='w-[70px] h-[2px] bg-black'></div>
             <h2 className='mt-2 text-5xl font-alumni'>Explore our work</h2>
             <h3 className=' mt-2 text-4xl font-alumni'>Check out our portfolio gallery!</h3>
-            <p className='mt-4 text-base mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, accusantium quasi quam suscipit voluptate fugit odio unde, libero dolor ratione enim hic, eum inventore repellendus. Voluptatibus nisi tenetur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum reprehenderit tempora voluptatem modi in vel laudantium distinctio atque natus iste minima eaque fuga a illo quaerat, possimus magni beatae.</p>
+            <p className='mt-4 text-base mb-10'>Dive into the artistry and precision of our work by exploring our portfolio gallery. From classic cuts to modern styles, our portfolio showcases the expertise and creativity of our talented barbers. Discover inspiration for your next haircut and see why Masters Barbershop is trusted by clients for crafting confident looks, one cut at a time. Experience the difference with Masters Barbershop and schedule your appointment today.</p>
            <Link target='blank' to="/gallery"><Button text="Explore"/></Link> 
            </div>
            <div id="home-gallery-section-images" className='home-gallery-section-images w-1/2 h-full grid grid-cols-3 grid-rows-3  gap-2 p-10 overflow-hidden  relative'>

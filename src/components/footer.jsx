@@ -12,7 +12,7 @@ export default function Footer(){
                 <div className="grid grid-cols-4  w-11/12 m-auto py-20">
                     <div className="w-full h-full">
                         <h3  className="text-6xl  text-white font-serif font-thin mb-5">Masters</h3>
-                        <p className="text-lg font-sans font-light mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic quidem rem aspernatur reprehenderit! </p>
+                        <p className="text-lg font-sans font-light mb-5">Transforming your look and confidence through masterful grooming experiences. </p>
                       <div className="social-buttons flex flex-wrap gap-5 ">
                       <div className="social-button social-button--facebook" aria-label="Facebook">
                     <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
