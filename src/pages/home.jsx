@@ -25,7 +25,7 @@ export default function Home(){
      <TeamMasters />
      <HomePricesMenu />
      <DiscountBanner />
-    {/*  <AboutSectionHome /> */}
+     <AboutSectionHome />
     {/*  <ShopSectionHome /> */}
      {/* <Testimonials /> */}
     </>
