@@ -74,7 +74,7 @@ export default function Testimonials(){
     };
     
     return(
-        <div id='testimonials-section'  className='w-full py-10 md:p-20  flex flex-col items-center bg-zinc-400 mb-[40vh]'>
+        <div id='testimonials-section'  className='w-full  py-14 md:p-20  flex flex-col items-center bg-zinc-400 '>
         <div className='w-full  flex flex-col items-center justify-center '>
           <div className='w-[70px] h-[2px] bg-black self-center'></div>
         <h1 className='text-black md:mt-2 text-3xl md:text-5xl font-alumni'>Testimonials</h1>

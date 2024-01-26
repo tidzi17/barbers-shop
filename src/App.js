@@ -15,7 +15,7 @@ import BookingSection from './components/bookingSection';
 
 function App() {
   return (
-    <div>
+    <>
     <Navbar/>
     <ScrollButton />
     
@@ -29,11 +29,11 @@ function App() {
     <Route path="/shop" exact element={<Shop/>} />
     {/* <Route path='*' element={<NotFound />}/> */}
     </Routes>
-   {/*  <BookingSection /> */}
+    <BookingSection />
     {/* <ImageBanner />
     <Footer /> */}
     
-  </div>
+  </>
 
   );
 }
