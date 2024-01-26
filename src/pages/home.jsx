@@ -22,7 +22,7 @@ export default function Home(){
      <HomeSectionFirst />
      <Services />
      <HomeGallery />
-     {/* <TeamMasters /> */}
+     <TeamMasters />
      {/* <HomePricesMenu /> */}
      {/* <DiscountBanner /> */}
     {/*  <AboutSectionHome /> */}

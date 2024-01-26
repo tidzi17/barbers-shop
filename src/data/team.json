@@ -1,18 +1,21 @@
 {
     "masters": [
       {
+        "index": "1",
         "name": "Alex Clippersmith",
         "url": "assets/team/masterbarber1.png",
         "title": "Co-Founder & Style Director",
         "quote": "As a Co-Founder, I strive to elevate the art of grooming, blending tradition with contemporary flair for a signature Barber Shop Masters touch."
       },
       {
+        "index": "2",
         "name": "John Barberfield",
         "url": "assets/team/masterbarberfounder.png",
         "title": "Founder & Head Barber",
         "quote": "With a razor-sharp passion for the craft, I founded Barber Shop Masters to bring precision and style to every cut."
       },
       {
+        "index": "3",
         "name": "David Razorbeard",
         "url": "assets/team/masterbarber2.png",
         "title": "Co-Founder & Creative Stylist",
