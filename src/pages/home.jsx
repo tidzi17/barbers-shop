@@ -21,7 +21,7 @@ export default function Home(){
      <HomeLanding />
      <HomeSectionFirst />
      <Services />
-     {/* <HomeGallery /> */}
+     <HomeGallery />
      {/* <TeamMasters /> */}
      {/* <HomePricesMenu /> */}
      {/* <DiscountBanner /> */}
