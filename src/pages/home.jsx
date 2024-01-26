@@ -23,7 +23,7 @@ export default function Home(){
      <Services />
      <HomeGallery />
      <TeamMasters />
-     {/* <HomePricesMenu /> */}
+     <HomePricesMenu />
      {/* <DiscountBanner /> */}
     {/*  <AboutSectionHome /> */}
     {/*  <ShopSectionHome /> */}

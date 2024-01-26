@@ -8,7 +8,7 @@ export default function TeamMasters(){
             <div className='w-[70px] h-[2px] bg-white'></div>
             <h2 className='text-white font-alumni text-3xl md:text-5xl mt-2'>Our Masters</h2>
             </div>
-            <div className='w-full  mt-10 flex flex-col items-center md:flex-row gap-5 md:gap-7 lg:gap-14 lg:px-20'>
+            <div className='w-full  mt-10 flex flex-col items-center justify-center md:flex-row gap-5 md:gap-7 lg:gap-14 lg:px-20'>
                 {data.masters.map((master, index) => (
                     <div key={index} className={`text-white flex flex-col items-center text-center w-11/12 h-[26rem] md:h-[32rem] lg:h-auto md:w-96`}>
                         <img src={master.url} alt="smdks" className={`md:w-full  object-cover  brightness-50 grayscale transition-all duration-300 ease-in hover:grayscale-0   h-2/3 ${index % 2 === 0 ? 'lg:h-[410px]' : 'lg:h-[450px]'}`}/>
