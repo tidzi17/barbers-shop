@@ -53,7 +53,7 @@ export default function Navbar(){
         {/*  */}
         <div className="flex items-center gap-4">
             <AiOutlineShoppingCart className="text-3xl  text-zinc-200 cursor-pointer" />
-          <div className="nav-button-container"><button onClick={handleScroll} className="nav-button ">Book apointment</button></div> 
+          <div className="nav-button-container"><button onClick={handleScroll} className="nav-button  min620:hidden">Book apointment</button></div> 
         </div>
       </nav>
       

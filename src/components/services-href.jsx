@@ -46,21 +46,4 @@ const PopularServices = [
         title: "Skin Fade",
         text: "Elevate your hairstyle with our Skin Fade service, creating a sleek and modern appearance with expert blending and precision cutting techniques."
     },
-    
 ]
-
-
-  {/*   <div className='flex w-full gap-6 mt-6 justify-center '>
-            <div className="group h-full w-1/3  cursor-pointer relative overflow-hidden">
-                <img src={first} alt='service1' className='w-full h-full object-cover grayscale hover:grayscale-0  transition-transform duration-500 ease-in-out transform group-hover:scale-105'/>
-                {<div className='overlay absolute top-0 left-0 w-full h-full bg-black opacity-85 transition-opacity duration-500 ease-in-out  group-hover:opacity-50 group-hover:scale-105'></div>}
-                 </div>
-            <div className="group h-full w-1/4  cursor-pointer relative overflow-hidden">
-            <img src={second} alt='service2' className='w-full h-full object-cover  transition-transform duration-500 ease-in-out transform group-hover:scale-105'/>
-            <div className='overlay absolute top-0 left-0 w-full h-full bg-black opacity-85  transition-opacity duration-500 ease-in-out  group-hover:opacity-50 '></div>
-             </div>
-            <div className="group h-full w-1/4  cursor-pointer relative overflow-hidden">
-            <img src={third} alt='service3' className='w-full h-full object-cover  transition-transform duration-500 ease-in-out transform group-hover:scale-105'/>
-            <div className='overlay absolute top-0 left-0 w-full h-full bg-black opacity-85  transition-opacity duration-500 ease-in-out  group-hover:opacity-50 '></div>
-                 </div>
-            </div> */}

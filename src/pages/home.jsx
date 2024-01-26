@@ -19,7 +19,7 @@ export default function Home(){
   return (
     <>
      <HomeLanding />
-     <HomeSectionFirst />
+    {/*  <HomeSectionFirst />
      <Services />
      <HomeGallery />
      <TeamMasters />
@@ -27,7 +27,7 @@ export default function Home(){
      <DiscountBanner />
      <AboutSectionHome />
      <ShopSectionHome />
-     <Testimonials />
+     <Testimonials /> */}
     </>
   );
 };

@@ -8,7 +8,7 @@ export default function HomeSectionFirst(){
                     <p className=" text-5xl  uppercase font-semibold">Crafting Confidence, One Cut at a Time.</p>
                 </div>
                 <div className="w-1/2 h-full flex items-center justify-center">
-                    <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-12">
+                    <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-16 ">
                         <div className="px-1 py-1 flex flex-col text-left w-3/4 h-fit">
                             <h3 className="text-2xl pb-3">Expert Barbers</h3>
                             <p className="text-base">Trust in the expertise of our skilled barbers who bring years of experience and passion to every haircut, ensuring precision and perfection with each snip.</p>
