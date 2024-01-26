@@ -19,15 +19,15 @@ export default function Home(){
   return (
     <>
      <HomeLanding />
-    {/*  <HomeSectionFirst />
-     <Services />
-     <HomeGallery />
-     <TeamMasters />
-     <HomePricesMenu />
-     <DiscountBanner />
-     <AboutSectionHome />
-     <ShopSectionHome />
-     <Testimonials /> */}
+     <HomeSectionFirst />
+    {/*  <Services /> */}
+     {/* <HomeGallery /> */}
+     {/* <TeamMasters /> */}
+     {/* <HomePricesMenu /> */}
+     {/* <DiscountBanner /> */}
+    {/*  <AboutSectionHome /> */}
+    {/*  <ShopSectionHome /> */}
+     {/* <Testimonials /> */}
     </>
   );
 };

@@ -29,7 +29,7 @@ function App() {
     <Route path="/shop" exact element={<Shop/>} />
     {/* <Route path='*' element={<NotFound />}/> */}
     </Routes>
-    <BookingSection />
+   {/*  <BookingSection /> */}
     {/* <ImageBanner />
     <Footer /> */}
     
