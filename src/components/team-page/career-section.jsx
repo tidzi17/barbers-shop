@@ -9,13 +9,13 @@ export default function CareerSection(){
         <Parallax  
         bgImage={bgImage} 
         strength={300}>
-        <div  className="w-full  p-28 text-black">
+        <div  className="w-full px-5 py-16 lg:p-28 text-black">
             <div className="flex h-full ">
-            <div className="w-1/2 m-auto">
+            <div className="w-full lg:w-1/2 m-auto">
                 <div className='w-fit m-auto text-center text-white mb-10'>
                 <div className='w-[70px] h-[2px] bg-white m-auto'></div>
-                    <h2 className='mt-2 text-5xl font-alumni'>Interested in Joining Us?</h2>
-                    <h2 className='mt-2 text-4xl font-alumni'>Check out open positions!</h2>
+                    <h2 className='md:mt-2 text-3xl md:text-5xl font-alumni'>Interested in Joining Us?</h2>
+                    <h2 className='md:mt-2 text-2xl md:text-4xl  font-alumni'>Check out open positions!</h2>
              </div>
              <div className='flex flex-col gap-6 mt-8'>
              {data.careers.map((career, index) => (
