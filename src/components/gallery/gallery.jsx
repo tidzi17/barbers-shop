@@ -67,7 +67,7 @@ const ImageGallery = ({ galleryImages }) => {
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd} >
             
-            <RxCross1  className='top-[40px] right-[80px] text-3xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={handleCloseModal}/>
+            <RxCross1  className='top-[40px] right-[30px] md:right-[80px] text-3xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={handleCloseModal}/>
             <BsChevronLeft className='top-[50%] transform -translate-y-[50%] left-0 md:left-[40px] text-5xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={prevSlide}/>
             <BsChevronCompactRight className='top-[50%] transform -translate-y-[50%] right-0 md:right-[40px]  text-5xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={nextSlide} />
             <div className='flex items-center justify-center w-[80%] md:w-full h-full'>
