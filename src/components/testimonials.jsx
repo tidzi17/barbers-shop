@@ -21,13 +21,13 @@ export default function Testimonials(){
     
     const generateTestimonialsJSX = () => {
         return customerData.map((customer, index) => (
-            <div key={index} className='flex flex-col h-80'>
-                <div className={`h-64  z-10 flex items-center justify-center text-center px-5   ${index % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-500'}`}>
-                <p className='text-white font-athiti text-base'>"{reviewsData.reviews[index]}"</p>
+            <div key={index} className='flex flex-col  md:h-80'>
+                <div className={`h-44 md:h-64  z-10 flex items-center justify-center text-center px-5   ${index % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-500'}`}>
+                <p className='text-white font-athiti text-xs md:text-base'>"{reviewsData.reviews[index]}"</p>
                 </div>
-                <div className='flex z-20 -mt-10'>
-                <img src={customer.picture.thumbnail} alt={customer.name.first} className='w-[60px] rounded-full  ml-2 grayscale' />
-                <h3 className=' text-white ml-10  font-athiti text-base'>{`${customer.name.first} ${customer.name.last}`}</h3>
+                <div className='flex z-20 -mt-7 md:-mt-10'>
+                <img src={customer.picture.thumbnail} alt={customer.name.first} className='w-[45px] md:w-[60px] rounded-full  ml-2 grayscale' />
+                <h3 className=' text-white ml-10  font-athiti text-xs md:text-base'>{`${customer.name.first} ${customer.name.last}`}</h3>
                 </div>
             </div>
         ))
@@ -49,7 +49,7 @@ export default function Testimonials(){
         appendDots: dots => (
             <div
               style={{
-                padding: "10px"
+                padding: "md:10px"
               }}
             >
               <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -57,21 +57,29 @@ export default function Testimonials(){
           ),
           customPaging: i => (
             <div
-              className='mt-10'
+              className='mt-2 md:mt-10'
             >
-              <div className='w-[10px] h-[10px] bg-black rounded-full hover:scale-150'></div>
+              <div className='w-[7px] h-[7px] md:w-[10px] md:h-[10px] bg-black rounded-full hover:scale-150'></div>
             </div>
-          )
+          ),
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
        
     };
     
     return(
-        <div id='testimonials-section'  className='w-full h-[700px] flex flex-col items-center bg-zinc-400'>
-        <div className='w-full h-fit flex flex-col items-center justify-center mt-16'>
+        <div id='testimonials-section'  className='w-full py-10 md:p-20  flex flex-col items-center bg-zinc-400 mb-[40vh]'>
+        <div className='w-full  flex flex-col items-center justify-center '>
           <div className='w-[70px] h-[2px] bg-black self-center'></div>
-        <h1 className='text-black text-5xl font-alumni'>Testimonials</h1>
+        <h1 className='text-black md:mt-2 text-3xl md:text-5xl font-alumni'>Testimonials</h1>
         </div>
-        <div className='w-9/12 mt-28 '>
+        <div className='w-full lg:w-9/12 mt-10 md:mt-28 mb-10  '>
         <Slider {...settings}>
         {generateTestimonialsJSX()}
         </Slider>

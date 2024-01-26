@@ -27,7 +27,7 @@ export default function Home(){
      <DiscountBanner />
      <AboutSectionHome />
      <ShopSectionHome />
-     {/* <Testimonials /> */}
+     <Testimonials />
     </>
   );
 };
