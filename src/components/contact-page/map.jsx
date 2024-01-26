@@ -15,7 +15,7 @@ const Map = () => {
 
   return (
     <div>
-      <MapContainer className="w-full h-[500px]" center={position} zoom={5} >
+      <MapContainer className="w-full h-[250px] md:h-[500px]" center={position} zoom={5} >
         <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" attribution="Map data &copy; OpenStreetMap contributors" />
         <Marker position={position} icon={customIcon}>
           <Popup>{"21.Jump Street"}</Popup>
