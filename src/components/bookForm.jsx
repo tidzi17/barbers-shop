@@ -11,7 +11,7 @@ export default function BookForm(){
             <input type="text" name="name" id="name" placeholder="Your Name" className="w-full h-12 bg-transparent  placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300" />
             <input type="tel" name="phonenum" id="phonenum" placeholder="Your Phone Number" className="w-full h-12 bg-transparent  placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300"/>
             <textarea name="message" id="message" placeholder="Your message"  className="w-full h-32 bg-transparent placeholder:text-neutral-700 placeholder:pl-3 border-[1px] border-zinc-300"></textarea>
-            <button type="submit" className="h-12 w-1/3 font-mono text-base bg-zinc-800 text-zinc-400 ">Send message</button>
+            <button type="submit" className="h-12 w-1/3 font-mono text-base bg-zinc-800 text-zinc-400 p-1">Send message</button>
             </form>
         </div>
     )
