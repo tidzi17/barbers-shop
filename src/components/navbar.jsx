@@ -3,10 +3,12 @@ import { FiMenu } from 'react-icons/fi'
 import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoCloseOutline } from "react-icons/io5";
+import emptyCart from '../assets/emptycart.png';
 import clsx from "clsx";
 
 export default function Navbar(){
     const [isSideMenuOpen, setMenu] = useState(false);
+    const [isCartOpen, setCart] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
@@ -29,7 +31,7 @@ export default function Navbar(){
       const bgColor = scrollPosition > 100 ? 'black' : 'transparent';
 
     return(
-      <div id="navbar" className="">
+      <div id="navbar" className="relative">
         <nav style={{ backgroundColor: bgColor}} className="w-full fixed  z-20 flex justify-between px-6 items-center py-6 lg:py-6 lg:px-24 ">
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
@@ -52,8 +54,28 @@ export default function Navbar(){
         </div>
         {/*  */}
         <div className="flex items-center gap-4">
-            <AiOutlineShoppingCart className="text-3xl  text-zinc-200 cursor-pointer" />
+            <AiOutlineShoppingCart onClick={() => setCart(true)}  className="text-3xl  text-zinc-200 cursor-pointer" />
           <div className="nav-button-container"><button onClick={handleScroll} className="nav-button  min620:hidden">Book apointment</button></div> 
+        </div>
+       {/*  Cart */}
+        <div  onClick={() => setCart(false)} className={
+          clsx("fixed h-full transition-all w-screen -translate-x-full  bg-black/50 backdrop-blur-sm top-0 right-0 z-40",
+          isCartOpen ? 'translate-x-0' : 'translate-x-full')}>
+             <div
+            className="text-black bg-white ml-auto transition-all  flex flex-col absolute  w-56 lg:w-64  right-0 top-0 h-screen p-10 gap-8 z-50 ">
+             <IoCloseOutline
+                onClick={() => setCart(false)}
+                 className="mt-0 text-3xl lg:text-4xl cursor-pointer" />
+                 <div className="w-full h-full px-2 flex flex-col justify-between">
+                 <p className="text-xl font-alumni uppercase">Cart:</p>
+                  <div>
+                    <p className="text-xl font-alumni">Your cart is empty</p>
+                    <img src={emptyCart} alt="" className="w-44 h-44" />
+                  </div>
+                  <button className="bg-black px-3 py-1 text-base text-white transform duration-200 hover:bg-white hover:border-2 hover:border-black hover:text-black" disabled>View Cart</button>
+                 </div>
+                
+             </div>
         </div>
       </nav>
       
