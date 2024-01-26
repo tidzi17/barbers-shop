@@ -20,7 +20,7 @@ export default function Home(){
     <>
      <HomeLanding />
      <HomeSectionFirst />
-    {/*  <Services /> */}
+     <Services />
      {/* <HomeGallery /> */}
      {/* <TeamMasters /> */}
      {/* <HomePricesMenu /> */}
