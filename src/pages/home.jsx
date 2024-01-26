@@ -24,7 +24,7 @@ export default function Home(){
      <HomeGallery />
      <TeamMasters />
      <HomePricesMenu />
-     {/* <DiscountBanner /> */}
+     <DiscountBanner />
     {/*  <AboutSectionHome /> */}
     {/*  <ShopSectionHome /> */}
      {/* <Testimonials /> */}
