@@ -15,7 +15,7 @@ import BookingSection from './components/bookingSection';
 
 function App() {
   return (
-    <>
+    <div>
     <Navbar/>
     <ScrollButton />
     
@@ -33,7 +33,7 @@ function App() {
     {/* <ImageBanner />
     <Footer /> */}
     
-  </>
+  </div>
 
   );
 }

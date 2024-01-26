@@ -6,7 +6,7 @@ import Button from './button';
 
 export default function AboutSectionHome(){
     return(
-        <div className='w-full h-[120vh]  md:h-[85vh] bg-zinc-300 p-6 mb-[50vh]'>
+        <div className='w-full h-[120vh]  md:h-[85vh] bg-zinc-300 p-6'>
             <div className="flex flex-col md:flex-row  w-full h-full justify-around">
             <div className='w-full md:w-1/2 md:h-full md:py-10 mb-3 md:mb-0'>
             <div className='w-[70px] h-[2px] bg-black'></div>

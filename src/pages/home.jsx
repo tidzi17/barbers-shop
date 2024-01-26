@@ -26,7 +26,7 @@ export default function Home(){
      <HomePricesMenu />
      <DiscountBanner />
      <AboutSectionHome />
-    {/*  <ShopSectionHome /> */}
+     <ShopSectionHome />
      {/* <Testimonials /> */}
     </>
   );
