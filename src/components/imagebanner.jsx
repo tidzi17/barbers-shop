@@ -8,18 +8,18 @@ export default function ImageBanner(){
     return(
         <div className="w-full h-[20vh] md:h-[30vh] flex">
   <div className="w-full h-full">
-    <img src={first} alt="Left Image" className="w-full h-full object-cover grayscale" />
+    <img src={first} alt=""  className="w-full h-full object-cover grayscale" />
   </div>
 
   <div className="w-full h-full">
-    <img src={second} alt="Middle Image" className="w-full h-full object-cover grayscale" />
+    <img src={second} alt="" className="w-full h-full object-cover grayscale" />
   </div>
 
   <div className="w-full h-full">
-    <img src={third} alt="Right Image" className="w-full h-full object-cover grayscale" />
+    <img src={third} alt="" className="w-full h-full object-cover grayscale" />
   </div>
   <div className="w-full h-full">
-    <img src={forth} alt="Right Image" className="w-full h-full object-cover grayscale" />
+    <img src={forth} alt="" className="w-full h-full object-cover grayscale" />
   </div>
 </div>
     )

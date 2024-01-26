@@ -29,7 +29,7 @@ const HomeLanding = () => {
             zoomIn ? 'zoom-in-animation' : ''
           }`}
         >
-          <video src={bgVideo} autoPlay loop muted className="w-full h-full object-cover  grayscale brightness-50" alt="Background" />
+          <video type="video/mp4" src={bgVideo} autoPlay loop muted className="w-full h-full object-cover  grayscale brightness-50" alt="Background" />
         </div>
         <div className="landing-header absolute overflow-hidden top-[25%] md:top-[30%] w-full flex flex-col px-6  py-6 lg:py-6 lg:px-24">
        <h1 className="font-alumni text-3xl md:text-5xl lg:text-7xl  text-zinc-300 z-10 ">
