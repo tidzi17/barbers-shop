@@ -31,8 +31,8 @@ const HomeLanding = () => {
         >
           <video src={bgVideo} autoPlay loop muted className="w-full h-full object-cover  grayscale brightness-50" alt="Background" />
         </div>
-        <div className="landing-header absolute overflow-hidden top-[25%] lg:top-[28%] w-full flex flex-col px-6  py-6 lg:py-6 lg:px-24">
-       <h1 className="font-alumni text-4xl md:text-5xl lg:text-7xl  text-zinc-300 z-10 ">
+        <div className="landing-header absolute overflow-hidden top-[30%]  w-full flex flex-col px-6  py-6 lg:py-6 lg:px-24">
+       <h1 className="font-alumni text-3xl md:text-5xl lg:text-7xl  text-zinc-300 z-10 ">
        Crafting Timeless Styles Since '95. <br></br> Discover the Expertise of Masters Barbershop.
           </h1>
           <p className='w-full lg:w-1/2 md:w-2/3 mt-5 text-md font-sans text-zinc-200 font-light text-xs md:text-base'>Unveil the mastery behind each haircut at Masters Barbershop. With dedication and precision, our skilled barbers have been crafting impeccable styles since 1995. Our commitment to excellence ensures that every client receives the finest grooming experience possible.</p>
