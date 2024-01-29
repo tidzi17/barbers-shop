@@ -15,7 +15,6 @@ export default function Navbar(){
         const section = document.getElementById('booking-section');
         section.scrollIntoView({ behavior: 'smooth' });
       };
-
       useEffect(() => {
         const handleScroll = () => {
           const position = window.pageYOffset;
@@ -27,7 +26,6 @@ export default function Navbar(){
           window.removeEventListener('scroll', handleScroll);
         };
       }, []);
-  
       const bgColor = scrollPosition > 100 ? 'black' : 'transparent';
 
     return(

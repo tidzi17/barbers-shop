@@ -61,7 +61,7 @@ const ImageGallery = ({ galleryImages }) => {
 
     
     return(
-        <div className='lg:px-20 lg:py-20 md:px-10 py-10'>
+        <div className='w-11/12 m-auto lg:px-[150px] py-[50px]'>
             {openModal && 
             <div className='fixed h-screen w-screen  bg-black/50 backdrop-blur-sm top-0 right-0 z-40 scroll-m-0 flex items-center justify-center'
             onTouchStart={handleTouchStart}
@@ -76,7 +76,7 @@ const ImageGallery = ({ galleryImages }) => {
                 </div>
                 }
 
-            <div className='gallery '>
+            <div className='gallery'>
                 {
                     galleryImages && galleryImages.map((slide, index) => {
                         return(
