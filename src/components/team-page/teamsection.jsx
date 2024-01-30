@@ -32,7 +32,7 @@ export default function TeamSection() {
               <TeamCard key={index} {...member} />
             ))}
           </div>
-          <div className="relative w-[1px] bg-white">
+          <div className="relative w-[2px] bg-white">
             <div
               className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"
               style={{ top: `${scrollPercentage}%` }}

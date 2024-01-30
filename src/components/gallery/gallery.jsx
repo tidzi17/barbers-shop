@@ -1,6 +1,6 @@
 import { useState, useRef,  useEffect } from 'react';
 import { BsChevronCompactRight } from "react-icons/bs"; //next
-import { BsChevronLeft } from "react-icons/bs"; //prev
+import { BsChevronCompactLeft } from "react-icons/bs"; //prev
 import { RxCross1 } from "react-icons/rx"; //exit
 
 const ImageGallery = ({ galleryImages }) => {
@@ -35,29 +35,31 @@ const ImageGallery = ({ galleryImages }) => {
       const handleTouchEnd = (e) => {
         const touchEndX = e.changedTouches[0].clientX;
         const deltaX = touchEndX - touchStartX.current;
-    
+
         if (deltaX > 50) {
-          prevSlide();
+            prevSlide();
         } else if (deltaX < -50) {
-          nextSlide();
+            nextSlide();
         }
-      };
-    
+    };
+
       const handleKeyDown = (e) => {
         if (e.key === 'ArrowLeft') {
-          prevSlide();
+            prevSlide();
         } else if (e.key === 'ArrowRight') {
-          nextSlide();
+            nextSlide();
+        } else if (e.key === 'Escape') {
+            handleCloseModal();
         }
-      };
+    };
 
-      useEffect(() => {
+    useEffect(() => {
         document.addEventListener('keydown', handleKeyDown);
-    
+
         return () => {
-          document.removeEventListener('keydown', handleKeyDown);
+            document.removeEventListener('keydown', handleKeyDown);
         };
-      }, [slideNumber]);
+    }, [slideNumber]);
 
     
     return(
@@ -68,7 +70,7 @@ const ImageGallery = ({ galleryImages }) => {
             onTouchEnd={handleTouchEnd} >
             
             <RxCross1  className='top-[40px] right-[30px] md:right-[80px] text-3xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={handleCloseModal}/>
-            <BsChevronLeft className='top-[50%] transform -translate-y-[50%] left-0 md:left-[40px] text-5xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={prevSlide}/>
+            <BsChevronCompactLeft className='top-[50%] transform -translate-y-[50%] left-0 md:left-[40px] text-5xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={prevSlide}/>
             <BsChevronCompactRight className='top-[50%] transform -translate-y-[50%] right-0 md:right-[40px]  text-5xl text-white fixed cursor-pointer  z-50 hover:opacity-100' onClick={nextSlide} />
             <div className='flex items-center justify-center w-[80%] md:w-full h-full'>
                 <img src={galleryImages[slideNumber]} alt='' className='grayscale max-w-full max-h-full pointer-events-none select-none'/>
