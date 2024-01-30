@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useFormik } from "formik";
 import { formSchema } from "./formSchema";
 import { IoIosCheckmarkCircle } from "react-icons/io";
@@ -90,7 +90,7 @@ import { RxCross2 } from "react-icons/rx";
                 className="w-full h-full resize-none bg-transparent outline-none  placeholder:text-neutral-700 " />
                 {errors.message && touched.message && <p className="absolute bottom-[-25px] text-red-500 font-sans font-light text-sm">{errors.message}</p>}
                 </div>
-                <button  disabled={isSubmitting}  type="submit" className="px-4 py-2 font-mono text-base bg-zinc-300 text-black ">Send message</button>
+                <button  disabled={isSubmitting}  type="submit" className="px-5 rounded-lg py-2 font-mono text-base bg-zinc-300 text-black ">Send message</button>
             </form>
 
             {isSubmitted && (

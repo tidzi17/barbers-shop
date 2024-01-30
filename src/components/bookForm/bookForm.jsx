@@ -1,4 +1,4 @@
-    import React, { useState, useEffect, useRef } from "react";
+    import React, { useState, useRef } from "react";
     import { useFormik } from "formik";
     import { formSchema } from "./formSchema";
     import { IoIosCheckmarkCircle } from "react-icons/io";
@@ -118,7 +118,7 @@
                 className="w-full h-full bg-transparent placeholder:text-neutral-700 outline-none"></textarea>
                 </div>
                 
-                <button  disabled={isSubmitting}  type="submit" className="font-mono text-base bg-zinc-800 text-zinc-400 px-4 py-2">Book Apointment</button>
+                <button  disabled={isSubmitting}  type="submit" className="font-mono text-base bg-zinc-200 text-zinc-800 rounded-lg px-4 py-2">Book Apointment</button>
                 </form>
 
 
