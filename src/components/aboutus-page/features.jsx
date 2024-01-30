@@ -28,7 +28,7 @@ export default function FeaturesSection(){
                             <p className='float-right ml-auto font-aboreto text-xl md:text-2xl lg:text-4xl pr-5'>{couterOn && <CountUp start={0} end={29} duration={4} delay={0}/>}</p>
                         </div>
                         <div className=' h-full  flex items-center'>
-                            <p className='text-xl md:text-2xl lg:text-4xl font-aboreto pl-5'>Years of <br></br>Service</p>
+                            <p className='text-xl md:text-2xl lg:text-4xl font-alumni pl-5'>Years of Service</p>
                         </div>
                     </div>
                     <div className='flex'>
@@ -36,7 +36,7 @@ export default function FeaturesSection(){
                             <p className='float-right ml-auto font-aboreto text-xl md:text-2xl lg:text-4xl pr-5'> {couterOn && <CountUp start={0} end={5000} duration={2} delay={0}/>}+</p>
                         </div>
                         <div className='w-1/2 h-full  flex items-center'>
-                            <p className='text-xl md:text-2xl lg:text-4xl font-aboreto pl-5'>Satisfied <br></br>Customers</p>
+                            <p className='text-xl md:text-2xl lg:text-4xl font-alumni pl-5'>Satisfied <br></br>Customers</p>
                         </div>
                     </div>
                     <div className='flex'>
@@ -44,7 +44,7 @@ export default function FeaturesSection(){
                             <p className='float-right ml-auto font-aboreto text-xl md:text-2xl lg:text-4xl pr-5'> {couterOn && <CountUp start={0} end={200} duration={2} delay={0}/>}+</p>
                         </div>
                         <div className=' h-full flex items-center'>
-                            <p className='text-xl md:text-2xl lg:text-4xl font-aboreto pl-5'>Diplomas &<br></br>Awards</p>
+                            <p className='text-xl md:text-2xl lg:text-4xl font-alumni pl-5'>Diplomas & Awards</p>
                         </div>
                     </div>
                   

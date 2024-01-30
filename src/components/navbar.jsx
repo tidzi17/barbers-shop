@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu } from 'react-icons/fi'
-import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoCloseOutline } from "react-icons/io5";
 import emptyCart from '../assets/emptycart.png';
@@ -34,9 +33,9 @@ export default function Navbar(){
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
             <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-zinc-200 lg:text-4xl"/>
-            <Link to="/" className="text-4xl text-zinc-200 font-serif font-thin">Masters
+            <a href="/" className="text-4xl text-zinc-200 font-serif font-thin">Masters
                 
-            </Link>
+            </a>
         </div>
        </div>
         {/* sidebar mobile */}
@@ -46,7 +45,7 @@ export default function Navbar(){
                 onClick={() => setMenu(false)}
                  className="mt-0 mb-8 text-3xl lg:text-4xl cursor-pointer" />
                 {navlinks.map((d, i) => 
-                 <Link key={i} to={d.link} className="font-bold font-alumni uppercase text-2xl tracking-wider">{d.label}</Link>
+                 <a key={i} href={d.link} className="font-bold font-alumni uppercase text-2xl tracking-wider">{d.label}</a>
                  )}
              </div>
         </div>

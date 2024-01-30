@@ -1,7 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { Link } from "react-router-dom";
 
 
 
@@ -32,9 +31,9 @@ export default function Footer(){
                         <h3 className="text-3xl lg:text-5xl font-alumni mb-5">Quick Links</h3>
                         <ul className="md:grid md:grid-cols-2">
                         {navlinks.map((d, i) => 
-                 <Link key={i} to={d.link} className="text-base lg:text-lg font-light tracking-wider font-sans ">
+                 <a key={i} href={d.link} className="text-base lg:text-lg font-light tracking-wider font-sans ">
                     <li>{d.label}</li>
-                 </Link>
+                 </a>
                  )}
                         </ul>
                     </div>
