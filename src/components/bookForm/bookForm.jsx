@@ -94,7 +94,7 @@
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="Your first & last name"
+                        placeholder="Your First & Last name"
                         className="w-full h-full bg-transparent  placeholder-pl-3 placeholder:text-neutral-700 outline-none"/>
                     {errors.name && touched.name && <p className="absolute bottom-[-25px] text-red-500 font-sans font-light text-sm">{errors.name}</p>}
                     </div>

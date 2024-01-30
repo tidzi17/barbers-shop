@@ -2,7 +2,7 @@ import React from "react"
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import ContactForm from "../contactForm";
+import ContactForm from "./contactForm";
 
 export default function ContactSection(){
     return(

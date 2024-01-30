@@ -1,4 +1,4 @@
-import BookForm from "./bookForm";
+import BookForm from "./bookForm/bookForm";
 import { FaPhone } from "react-icons/fa6";
 
 export default function BookingSection(){
