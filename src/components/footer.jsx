@@ -29,7 +29,7 @@ export default function Footer(){
                     </div>
                     <div className=" w-full h-full ">
                         <h3 className="text-3xl lg:text-5xl font-alumni mb-5">Quick Links</h3>
-                        <ul className="md:grid md:grid-cols-2">
+                        <ul className="lg:w-2/3 md:grid md:grid-cols-2">
                         {navlinks.map((d, i) => 
                  <a key={i} href={d.link} className="text-base lg:text-lg font-light tracking-wider font-sans ">
                     <li>{d.label}</li>
