@@ -64,6 +64,7 @@
                     className="w-full h-full bg-transparent  placeholder:text-neutral-700 placeholder:pl-3 outline-none"></input>
                     {errors.date && touched.date && <p className="absolute bottom-[-25px] text-red-500 font-sans font-light text-sm">{errors.date}</p>}
                     </div>
+                   
 
                     <div className={`w-1/2  h-full   pl-3  border-[1px]  ${errors.time && touched.time ? "border-red-500" : "border-zinc-300"} relative`}>
                     <select

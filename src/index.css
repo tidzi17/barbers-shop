@@ -18,117 +18,117 @@ video::-webkit-media-controls {
 
 /* karantina-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Karantina';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/karantina-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/karantina-v11-latin-regular.woff2') format('woff2'); 
 }
 
 /* allison-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Allison';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/allison-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/allison-v11-latin-regular.woff2') format('woff2'); 
 }
 
 /* antonio-100 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Antonio';
   font-style: normal;
   font-weight: 100;
-  src: url('../src/fonts/antonio-v19-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/antonio-v19-latin-100.woff2') format('woff2'); 
 }
 /* antonio-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Antonio';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/antonio-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/antonio-v19-latin-regular.woff2') format('woff2'); 
 }
 /* antonio-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Antonio';
   font-style: normal;
   font-weight: 600;
-  src: url('../src/fonts/antonio-v19-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/antonio-v19-latin-600.woff2') format('woff2'); 
 }
 
 /* alumni-sans-100 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Alumni Sans';
   font-style: normal;
   font-weight: 100;
-  src: url('../src/fonts/alumni-sans-v18-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/alumni-sans-v18-latin-100.woff2') format('woff2'); 
 }
 /* alumni-sans-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Alumni Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/alumni-sans-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/alumni-sans-v18-latin-regular.woff2') format('woff2'); 
 }
 /* alumni-sans-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Alumni Sans';
   font-style: normal;
   font-weight: 600;
-  src: url('../src/fonts/alumni-sans-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/alumni-sans-v18-latin-600.woff2') format('woff2'); 
 }
 /* athiti-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Athiti';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/athiti-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/athiti-v12-latin-regular.woff2') format('woff2'); 
 }
 
 /* inika-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Inika';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/inika-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/inika-v21-latin-regular.woff2') format('woff2'); 
 }
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Arizonia';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/arizonia-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/arizonia-v21-latin-regular.woff2') format('woff2'); 
 }
 /* beau-rivage-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Beau Rivage';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/beau-rivage-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/beau-rivage-v2-latin-regular.woff2') format('woff2'); 
 }
 /* aboreto-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Aboreto';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/aboreto-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/aboreto-v2-latin-regular.woff2') format('woff2'); 
 }
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Honeymoon';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/honeymoon-avenue-script.regular.ttf') format('ttf'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../src/fonts/honeymoon-avenue-script.regular.ttf') format('ttf');
 }
 
 ::-webkit-scrollbar {
@@ -194,12 +194,6 @@ video::-webkit-media-controls {
   animation-delay: 1s;
 }
 
-/* #first-section{
-  background-image: url(./assets/blackbg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 #testimonials-section{
   background-image: url(./assets/whitewood.jpg);
@@ -208,19 +202,7 @@ video::-webkit-media-controls {
   background-size: cover;
 }
 
-/* .about-section-second{
-  background-image: url(./assets/whitewood.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-  */
-/* #booking-section{
-  background-image: url(./assets/blackbg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+
 
 #home-team-section{
   background-image: url(./assets/blackbg.png);
@@ -228,13 +210,6 @@ video::-webkit-media-controls {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* #home-gallery-section{
-  background-image: url(./assets/blackbg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 
 #home-menu-container{

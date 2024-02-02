@@ -2,6 +2,8 @@ import first from '../assets/service1.png';
 import second from '../assets/service2.png';
 import third from '../assets/service3.png';
 import '../index.css';
+import MotionDiv from '../components/animation';
+import { SlideY } from '../components/animation';
 
 export default function Services(){
     return(
@@ -12,7 +14,8 @@ export default function Services(){
                 <h2 className='text-4xl text-white uppercase font-alumni'>Popular Services</h2>
             </div>
             <div className='w-full '>
-                <div className='w-full items-center  md:px-16 lg:w-3/4 h-full flex flex-col md:flex-row justify-center gap-5 m-auto  mt-5 md:mt-14 text-white'>
+                <MotionDiv className='w-full items-center  md:px-16 lg:w-3/4 h-full flex flex-col md:flex-row justify-center gap-5 m-auto  mt-5 md:mt-14 text-white'
+                animationVariants={SlideY}>
                     {PopularServices.map((item, index) => (
                     <div key={index} id='card' className='group w-64 md:w-80 h-80 md:h-96 lg:h-[30rem] mb-10  bg-black flex flex-col text-center overflow-hidden relative rounded-lg shadow-sm shadow-zinc-900'>
                     <img src={item.image} alt='service1' className='h-1/2 w-full object-cover grayscale opacity-85  transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-50 cursor-pointer'/>
@@ -22,7 +25,7 @@ export default function Services(){
                     </div>
                     ))}
                  
-                </div>
+                </MotionDiv>
             </div>
             </div>
         </div>

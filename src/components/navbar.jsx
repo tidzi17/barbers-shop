@@ -33,9 +33,7 @@ export default function Navbar(){
        <div className="flex items-center gap-8">
        <div className="flex items-center gap-4">
             <FiMenu onClick={() => setMenu(true)} className="text-3xl cursor-pointer text-zinc-200 lg:text-4xl"/>
-            <a href="/" className="text-4xl text-zinc-200 font-serif font-thin">Masters
-                
-            </a>
+            <a href="/" className="text-4xl text-zinc-200 font-serif font-thin">Masters</a>
         </div>
        </div>
         {/* sidebar mobile */}
