@@ -3,17 +3,30 @@
     import { formSchema } from "./formSchema";
     import { IoIosCheckmarkCircle } from "react-icons/io";
     import { RxCross2 } from "react-icons/rx";
+    import axios from 'axios';
 
 
-    const onSubmit = async (values, actions) => {
+  /*   const onSubmit = async (values, actions) => {
         await new Promise((resolve) => setTimeout(resolve, 1000));
         actions.resetForm()
     };
-
+ */
     const  BookForm = () => {
         const [isSubmitted, setIsSubmitted] = useState(false);
         const [submittedValues, setSubmittedValues] = useState(null);
         const messageBoxRef = useRef(null);
+
+        const onSubmit = async (values, actions) => {
+            try {
+                await axios.post("https://formspree.io/f/mayreodg", values);
+                actions.setSubmitting(false);
+                actions.resetForm();
+                setIsSubmitted(true);
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                actions.setSubmitting(false);
+            }
+        };
 
         const {values, errors, touched, isSubmitting, handleBlur,  handleChange, handleSubmit} = useFormik({
             initialValues: {
@@ -125,8 +138,8 @@
 
 
                 {isSubmitted && (
-               <div ref={messageBoxRef} className="fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-sm z-30 flex justify-center items-center">
-               <div className="w-96 h-[500px] p-8 bg-zinc-900 shadow-zinc-800 shadow-sm rounded-lg ">
+               <div  onClick={() => setIsSubmitted(false)} ref={messageBoxRef} className="fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-sm z-30 flex justify-center items-center">
+               <div  className="w-96 h-[500px] p-8 bg-zinc-900 shadow-zinc-800 shadow-sm rounded-lg ">
               
                 <div className="flex flex-col items-center text-center relative">
                 <button className="absolute top-1 right-1 text-white" onClick={() => setIsSubmitted(false)}><RxCross2 className="text-2xl text-white" /></button>

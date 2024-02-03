@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import bgVideo from '../media/bggVideo.mp4';
+import bgVideo from '../media/bgVideoShorted.mp4';
 import '../index.css';
 import { Link } from 'react-router-dom';
 
