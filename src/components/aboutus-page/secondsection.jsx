@@ -1,4 +1,4 @@
-import image from '../../assets/exterior.png';
+import image from '../../assets/exterior.jpg';
 import MotionDiv from '../../components/animation';
 import { SlideXLeft } from '../../components/animation';
 import { SlideXRight } from '../../components/animation';

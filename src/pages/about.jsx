@@ -1,4 +1,4 @@
-import landingimage from '../assets/landing.png'
+import landingimage from '../assets/landing.jpg'
 import MasterSection from '../components/aboutus-page/mastersection'
 import AboutFirstSection from '../components/aboutus-page/firstsection'
 import FeaturesSection from '../components/aboutus-page/features'

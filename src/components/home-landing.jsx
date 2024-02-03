@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-/* import bgImage from '../assets/landing.png'; */
-import bgVideo from '../media/bgVideo.mp4';
+import bgVideo from '../media/bggVideo.mp4';
 import '../index.css';
 import { Link } from 'react-router-dom';
 

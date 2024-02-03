@@ -119,7 +119,7 @@
                 className="w-full h-full bg-transparent placeholder:text-neutral-700 outline-none"></textarea>
                 </div>
                 
-                <button  disabled={isSubmitting}  type="submit" className="font-mono text-base bg-zinc-200 text-zinc-800 rounded-lg px-4 py-2">Book Apointment</button>
+                <button  disabled={isSubmitting}  type="submit" className="font-mono text-base bg-zinc-200 text-zinc-800 rounded-lg px-4 py-2 border-[1px] border-transparent transform duration-500 ease-in-out hover:bg-zinc-900  hover:border-white hover:text-white">Book Apointment</button>
                 </form>
 
 

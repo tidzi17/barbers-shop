@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import landingimage from '../assets/landing.png'
+import landingimage from '../assets/landing.jpg'
 import ImageGallery from '../components/gallery/gallery'
 import data from '../data/gallery.json';
 import MotionDiv from '../components/animation';

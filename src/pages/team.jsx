@@ -1,4 +1,4 @@
-import landingimage from '../assets/landing.png'
+import landingimage from '../assets/landing.jpg'
 import TeamSection from "../components/team-page/teamsection";
 import CareerSection from "../components/team-page/career-section";
 import { Link } from 'react-router-dom';

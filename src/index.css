@@ -9,6 +9,7 @@
 
 body{
   background-color: #101010;
+  scroll-behavior: smooth;
   
 }
 
@@ -211,14 +212,6 @@ video::-webkit-media-controls {
   background-size: cover;
 }
 
-
-#home-menu-container{
-  background-image: url(./assets/landing.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .slick-slide > div {
   margin: 0 10px;
 }
@@ -316,6 +309,7 @@ video::-webkit-media-controls {
   &:focus,
   &:hover {
     color: #b6b2ab;
+   
 
     &::after {
       width: calc(100% + 2px);
@@ -332,6 +326,10 @@ video::-webkit-media-controls {
   transition: 0.3s;
   height: 40%; 
   width: 40%; 
+}
+
+.social-button svg:hover{
+  scale: 1.1;
 }
 
 .gallery{

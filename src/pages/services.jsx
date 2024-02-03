@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import landingimage from '../assets/landing.png'
+import landingimage from '../assets/landing.jpg'
 import ServicesSection from '../components/services-page/services'
 import MotionDiv from '../components/animation';
 import { SlideXLeft } from '../components/animation';

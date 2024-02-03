@@ -1,6 +1,6 @@
-import first from '../assets/service1.png';
-import second from '../assets/service2.png';
-import third from '../assets/service3.png';
+import first from '../assets/service1.jpg';
+import second from '../assets/service2.jpg';
+import third from '../assets/service3.jpg';
 import '../index.css';
 import MotionDiv from '../components/animation';
 import { SlideY } from '../components/animation';

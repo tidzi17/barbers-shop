@@ -1,7 +1,7 @@
 import first from '../assets/beard.webp';
 import second from '../assets/art.webp'
-import third from '../assets/service3.png'
-import forth from '../assets/service2.png'
+import third from '../assets/service3.jpg'
+import forth from '../assets/service2.jpg'
 
 
 export default function ImageBanner(){
