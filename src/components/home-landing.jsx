@@ -28,7 +28,7 @@ const HomeLanding = () => {
             zoomIn ? 'zoom-in-animation' : ''
           }`}
         >
-          <video preload='auto' autoPlay loop muted playsInline className="w-full h-full object-cover  grayscale brightness-50" alt="Background">
+          <video preload='auto' controls='false' autoPlay loop muted playsInline className="w-full h-full object-cover  grayscale brightness-50" alt="Background">
             <source src={bgVideo} type='video/mp4'/>
           </video>
         </div>

@@ -16,6 +16,7 @@ body{
   video::-webkit-media-controls {
     display: none !important;
   }
+  
   video {
     touch-action: none;
     -webkit-touch-callout: none;
@@ -25,6 +26,7 @@ body{
     -ms-user-select: none;
     user-select: none;
     pointer-events: none;
+    
 }
 /* karantina-regular - latin */
 @font-face {
