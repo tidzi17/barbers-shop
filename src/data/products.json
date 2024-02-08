@@ -1,0 +1,355 @@
+{
+    "products": [
+      {
+        "id": "CedarwoodBeardSerum",
+        "cathegory": "beard",
+        "title": "Beard Growth Serum - Cedarwood Blend",
+        "url": "assets/products/1.png",
+        "price": "$20.99",
+        "cardDescription": "Nourish and strengthen your beard with our Cedarwood Blend Beard Growth Serum.",
+        "pageDescription": "Our Cedarwood Blend Beard Growth Serum is formulated with a potent blend of natural oils, including jojoba and argan, enriched with cedarwood essential oil. This serum promotes healthy beard growth, reduces itchiness, and softens coarse hair. Perfect for achieving a fuller, thicker beard.",
+        "ingredients": "Jojoba oil, Argan oil, Cedarwood essential oil, Vitamin E.",
+        "usage": "Apply a few drops of serum to your fingertips and massage into your beard and the skin beneath. Use daily for best results."
+    },
+    {
+        "id": "SandalwoodEssenceSerum",
+        "cathegory": "beard",
+        "title": "Beard Growth Serum - Sandalwood Essence",
+        "url": "assets/products/2.png",
+        "price": "$22.99",
+        "cardDescription": "Enhance your beard's natural fragrance with our Sandalwood Essence Beard Growth Serum.",
+        "pageDescription": " Infused with the warm, woody aroma of sandalwood, our Sandalwood Essence Beard Growth Serum is designed to promote healthy beard growth while imparting a luxurious scent. Formulated with nourishing oils and sandalwood essential oil, this serum softens beard hair, moisturizes the skin, and adds a touch of sophistication to your grooming routine.",
+        "ingredients": "Coconut oil, Almond oil, Sandalwood essential oil, Vitamin E.",
+        "usage": " Dispense a small amount of serum onto your palms and rub them together. Gently massage the serum into your beard and skin. Use daily for optimal results."
+    },
+    {
+        "id": "CitrusBurstSerum",
+        "cathegory": "beard",
+        "title": "Beard Growth Serum - Citrus Burst",
+        "url": "assets/products/3.png",
+        "price": "$19.99",
+        "cardDescription": "Energize your beard with our Citrus Burst Beard Growth Serum.",
+        "pageDescription": "Our Citrus Burst Beard Growth Serum is infused with the invigorating scent of citrus fruits, including orange and lemon essential oils, to awaken your senses and revitalize your beard. Formulated with nourishing oils and botanical extracts, this serum promotes healthy beard growth, conditions facial hair, and leaves your beard feeling fresh and rejuvenated.",
+        "ingredients": "Grapeseed oil, Olive oil, Orange essential oil, Lemon essential oil, Vitamin E.",
+        "usage": "Apply a small amount of serum to your beard and skin, then gently massage in circular motions. Use daily for best results."
+    },
+    {
+        "id": "MintyFreshSerum",
+        "cathegory": "beard",
+        "title": "Beard Growth Serum - Minty Fresh",
+        "url": "assets/products/4.png",
+        "price": "$21.99",
+        "cardDescription": "Experience a refreshing sensation with our Minty Fresh Beard Growth Serum.",
+        "pageDescription": "Our Minty Fresh Beard Growth Serum is infused with peppermint and spearmint essential oils to provide a cooling sensation and invigorate your beard. Enriched with nourishing oils and botanical extracts, this serum stimulates hair follicles, promotes healthy beard growth, and soothes irritated skin, leaving your beard feeling revitalized and refreshed.",
+        "ingredients": "Coconut oil, Jojoba oil, Peppermint essential oil, Spearmint essential oil, Vitamin E.",
+        "usage": " Dispense a few drops of serum onto your fingertips and massage into your beard and the skin beneath. Use daily for optimal results."
+    },
+    {
+        "id": "HerbalFusionSerum",
+        "cathegory": "beard",
+        "title": "Beard Growth Serum - Herbal Fusion",
+        "url": "assets/products/5.png",
+        "price": "$23.99",
+        "cardDescription": "Embrace nature with our Herbal Fusion Beard Growth Serum.",
+        "pageDescription": "Our Herbal Fusion Beard Growth Serum blends the earthy scents of herbs and botanicals, including rosemary and lavender essential oils, to nourish and promote healthy beard growth. Formulated with a blend of natural oils and extracts, this serum conditions beard hair, moisturizes the skin, and enhances your grooming experience with its calming aroma.",
+        "ingredients": "Argan oil, Hempseed oil, Rosemary essential oil, Lavender essential oil, Vitamin E.",
+        "usage": "Apply a small amount of serum to your palms and rub them together. Gently massage the serum into your beard and skin. Use daily for optimal results."
+    },
+    {
+        "id": "WoodsyBlendSerum",
+        "cathegory": "beard",
+        "title": "Beard Growth Serum - Woodsy Blend",
+        "url": "assets/products/6.png",
+        "price": " $25.99",
+        "cardDescription": "Explore the great outdoors with our Woodsy Blend Beard Growth Serum.",
+        "pageDescription": "Our Woodsy Blend Beard Growth Serum captures the essence of the forest with its blend of woodsy essential oils, including cedarwood and pine. Infused with nourishing oils and botanical extracts, this serum promotes healthy beard growth, conditions facial hair, and evokes a sense of adventure and masculinity with its rugged scent.",
+        "ingredients": "Almond oil, Grapeseed oil, Cedarwood essential oil, Pine essential oil, Vitamin E.",
+        "usage": "Dispense a few drops of serum onto your fingertips and massage into your beard and the skin beneath. Use daily for optimal results."
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    }, {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    }, {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    }, {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    },
+    {
+        "id": "",
+        "cathegory": "",
+        "title": "",
+        "url": "",
+        "price": "",
+        "cardDescription": "",
+        "pageDescription": "",
+        "ingredients": "",
+        "usage": ""
+    }
+
+]
+    
+}
