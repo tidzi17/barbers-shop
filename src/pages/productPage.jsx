@@ -15,7 +15,7 @@ function ProductPage() {
         </div>
         <a href='/products' className='text-white ml-3 lg:ml-24  xl:ml-52 mt-10 flex items-center gap-3 text-base md:text-xl'><span className='text-white'><LiaLongArrowAltLeftSolid /></span><p>Back</p></a>
     <ProductDetails />
-    <div className='my-28'>
+    <div className='mt-10 md:mt-28  mb-28'>
         <TrendingProducts />
     </div>
            </div>
