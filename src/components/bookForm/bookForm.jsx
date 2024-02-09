@@ -87,7 +87,7 @@
                     type="time" min="08:00" max="20:00" 
                     placeholder="Time" id="time" 
                     className="w-full h-full bg-transparent  outline-none">
-                         <option value="" disabled selected className="text-neutral-700">
+                         <option value="" disabled  className="text-neutral-700">
                                     Time
                                 </option>
                         {timeOptions.map((time, index) => (

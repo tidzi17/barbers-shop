@@ -26,8 +26,8 @@ export default function HomeGallery(){
            <MotionDiv id="home-gallery-section-images" className='home-gallery-section-images w-full md:w-1/2 h-full grid grid-cols-3 grid-rows-3  gap-2 p-3 md:p-10 overflow-hidden  relative'
            animationVariants={SlideXRight}>
             {galleryImages.slice(5, 14).map((image, index) => (
-                <Link target='blank' to="/gallery">
-                 <img key={index} src={image} alt='' className="w-full overflow-hidden h-full object-cover transition-transform duration-500 ease-in-out  transform hover:scale-105 grayscale cursor-pointer"/>
+                <Link key={index} target='blank' to="/gallery">
+                 <img  src={image} alt='' className="w-full overflow-hidden h-full object-cover transition-transform duration-500 ease-in-out  transform hover:scale-105 grayscale cursor-pointer"/>
                  </Link>
             ))}
            </MotionDiv>
