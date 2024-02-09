@@ -37,7 +37,7 @@ function ProductDetails() {
 
 
   return (
-    <div>
+    <div className=''>
           <div className=' w-full px-3 lg:px-24  xl:px-64 pt-5 pb-28'>
 
        <div className=''>
@@ -50,14 +50,14 @@ function ProductDetails() {
         <div className='md:w-1/2 text-white flex flex-col md:justify-around md:px-10'>
             <div><h1 className='font-inika mt-2 md:mt-0 text-xl md:text-2xl lg:text-3xl'>{product.title}</h1></div>
 
-            <div className='font-sans flex flex-col mt-3 md:mt-0 gap-1 md:gap-2'>
+            <div className='font-sans py-5 md:py-0 flex flex-col mt-3 md:mt-0 gap-1 md:gap-2  border-b-[1px] border-white md:border-none'>
             <p onClick={handleScroll} className="text-zinc-700 text-sm cursor-pointer">See description</p>
             <p className='text-xl md:text-2xl lg:text-3xl'>{product.price}</p>
             <p className='text-sm'>{product.cardDescription}</p>
             </div>
 
             <div className='flex gap-8  md:text-xl mt-7 md:mt-0'> 
-            <p className='text-lg'>-   1   +</p>
+            <p className='text-lg md:text-2xl'>-   1   +</p>
             <button className='bg-white text-black px-1 md:px-3 py-1 rounded-lg md:text-lg text-base'>Add to cart</button>
             </div>
         </div>

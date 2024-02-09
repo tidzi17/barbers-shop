@@ -24,10 +24,14 @@ export default function Shop(){
             <Link to="/" className='font-mono uppercase text-xl md:text-2xl'>Home</Link>
         </MotionDiv>
         </div>
-        <div className=' w-full grid grid-cols-4  justify-center items-center  py-36 px-24 gap-20'>
+
+
+        <div className=''>
+            <div className='lg:w-10/12 m-auto grid grid-cols-2 min375:grid-cols-2 sm:grid-cols-3 md:grid-cols-4  justify-between items-center gap-2 md:gap-5 px-3 py-36  lg:px-10 xl:px-24 '>
         {data.products.map((product, index) => (
             <ProductCard key={index} {...product}/>
         ))}
+        </div>
         </div>
         </div>
     )
