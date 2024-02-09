@@ -12,10 +12,10 @@ body{
   scroll-behavior: smooth;
   
 }
-/* 
+
   video::-webkit-media-controls {
     display: none !important;
-  } */
+  }
 
   video {
     touch-action: none;
@@ -26,6 +26,7 @@ body{
     -ms-user-select: none;
     user-select: none;
     pointer-events: none;
+  
     
     
 }
@@ -219,6 +220,13 @@ body{
 
 #home-team-section{
   background-image: url(./assets/blackbg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-img-container{
+  background-image: url(./assets/productbg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

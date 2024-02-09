@@ -2,9 +2,14 @@ import landingimage from '../assets/landing.jpg'
 import MotionDiv from '../components/animation';
 import { SlideXLeft } from '../components/animation';
 import { Link } from 'react-router-dom'
+import Card from '../components/card';
+import data from '../data/products.json';
 
 
 export default function Shop(){
+
+    
+
     return(
         <div>
         <div>
@@ -18,6 +23,11 @@ export default function Shop(){
             <div className='w-[50px] h-[2px] bg-white'></div>
             <Link to="/" className='font-mono uppercase text-xl md:text-2xl'>Home</Link>
         </MotionDiv>
+        </div>
+        <div className=' w-full grid grid-cols-4  justify-center items-center  py-36 px-24 gap-20'>
+        {data.products.map((product, index) => (
+            <Card key={index} {...product}/>
+        ))}
         </div>
         </div>
     )

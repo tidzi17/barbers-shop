@@ -10,9 +10,6 @@ const HomeLanding = () => {
       const section = document.getElementById('booking-section');
       section.scrollIntoView({ behavior: 'smooth' });
     };
-
-    
-
   useEffect(() => {
     const timeout = setTimeout(() => {
       setZoomIn(true);
@@ -28,9 +25,8 @@ const HomeLanding = () => {
             zoomIn ? 'zoom-in-animation' : ''
           }`}
         >
-          <video preload='auto' controls='false' autoPlay="true" loop muted playsInline className="w-full h-full object-cover  grayscale brightness-50" alt="Background">
-            <source src={bgVideo} type='video/mp4'/>
-          </video>
+          <video src={bgVideo} preload='auto' controls='false' autoPlay="true" loop muted playsInline className="w-full h-full object-cover  grayscale brightness-50" alt="Background" />
+         
         </div>
         <div className="landing-header absolute overflow-hidden top-[25%] md:top-[30%] w-full flex flex-col px-6  py-6 lg:py-6 lg:px-24">
        <h1 className="font-alumni text-3xl md:text-5xl lg:text-7xl  text-zinc-300 z-10 ">
