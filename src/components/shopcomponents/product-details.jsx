@@ -38,9 +38,9 @@ function ProductDetails() {
 
   return (
     <div>
-          <div className='border-2 border-white w-full px-3 lg:px-24  xl:px-64 py-28'>
+          <div className=' w-full px-3 lg:px-24  xl:px-64 pt-5 pb-28'>
 
-       <div className='border-2 border-white'>
+       <div className=''>
       <div className='flex flex-col md:flex-row'>
 
         <div className='product-img-container md:w-1/2 h-[300px] lg:h-[550px] rounded-xl'>
@@ -66,7 +66,7 @@ function ProductDetails() {
 
 {/* Description section */}
 
-      <div className='border-2 border-white w-full py-2 flex flex-col gap-3 mt-12'>
+      <div className=' w-full py-2 flex flex-col gap-3 mt-12'>
                         <div id='description' className='w-full h-fit bg-zinc-900 p-2 rounded-lg'>
                             <div className='flex justify-between items-center text-base md:text-xl lg:text-2xl text-white font-average' onClick={toggleDescription}>
                                 <p>Description</p>

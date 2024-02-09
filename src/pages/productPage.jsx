@@ -13,9 +13,9 @@ function ProductPage() {
          <div>
         <img src={landingimage} alt="landingimage" className="w-full h-[30vh] object-cover grayscale relative"/>
         </div>
-        <a href='/products' className='text-white flex items-center gap-3'><span className='text-white'><LiaLongArrowAltLeftSolid /></span><p>Back</p></a>
+        <a href='/products' className='text-white ml-3 lg:ml-24  xl:ml-52 mt-10 flex items-center gap-3 text-base md:text-xl'><span className='text-white'><LiaLongArrowAltLeftSolid /></span><p>Back</p></a>
     <ProductDetails />
-    <div className='mt-36'>
+    <div className='my-28'>
         <TrendingProducts />
     </div>
            </div>
