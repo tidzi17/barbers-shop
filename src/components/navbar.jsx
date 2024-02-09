@@ -101,7 +101,7 @@ const navlinks = [
     },
     {
         label: "Shop",
-        link: "/shop"
+        link: "/products"
     },
     {
         label: "Contact",

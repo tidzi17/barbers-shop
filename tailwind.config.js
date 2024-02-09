@@ -37,7 +37,8 @@ module.exports = {
           rivage: ['Beau Rivage'],
           aboreto: ['Aboreto'],
           honeymoon: ['Honeymoon'],
-         
+          average: ['Average'],
+          bellefair: ['Bellefair'],
         },
         height: {
           '10vh': '10vh',

@@ -7,7 +7,7 @@ import MotionDiv from '../components/animation';
 import { SlideXLeft } from '../components/animation';
 import { SlideXRight } from '../components/animation';
 import data from '../data/products.json';
-import Card from "./card";
+import ProductCard from "./shopcomponents/productCard";
 
 
 export default function ShopSectionHome(){
@@ -61,7 +61,7 @@ export default function ShopSectionHome(){
             <h2 className='md:mt-2 text-3xl md:text-5xl font-alumni'>Visit our shop!</h2>
             <h3 className='md:mt-2 text-2xl md:text-4xl font-alumni'>Check out best products for you hair, beard and skincare!</h3>
             <p className='md:mt-4 text-xs md:text-base mb-2 md:mb-10'>Explore our selection of premium grooming products carefully curated to enhance your grooming routine. From top-quality shampoos and conditioners to luxurious beard oils and skincare essentials, we have everything you need to keep your look sharp and your skin healthy. Discover the perfect products tailored to your needs and elevate your grooming game with Masters Barbershop. Stop by today and let our knowledgeable team assist you in finding the ideal products for your grooming regimen.</p>
-            <Link target='blank' to="/shop" ><Button text="Explore" textColor="text-white" /></Link> 
+            <Link target='blank' to="/products" ><Button text="Explore" textColor="text-white" /></Link> 
            </MotionDiv>
            <MotionDiv className="ml-[40%] -mt-44 gap-5 flex w-2/3 items-center justify-around h-full "
            animationVariants={SlideXRight}
@@ -77,7 +77,7 @@ export default function ShopSectionHome(){
                 <div className="flex gap-4 ml-5 overflow-hidden"  >
                 {data.products.slice(1, 9).map((product, index) => (
                         <div key={index} style={slideStyle}>
-                            <Card {...product}/>
+                            <ProductCard {...product}/>
                         </div>
                     ))}
                 </div>

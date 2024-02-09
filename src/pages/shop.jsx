@@ -2,8 +2,8 @@ import landingimage from '../assets/landing.jpg'
 import MotionDiv from '../components/animation';
 import { SlideXLeft } from '../components/animation';
 import { Link } from 'react-router-dom'
-import Card from '../components/card';
 import data from '../data/products.json';
+import ProductCard from '../components/shopcomponents/productCard';
 
 
 export default function Shop(){
@@ -26,7 +26,7 @@ export default function Shop(){
         </div>
         <div className=' w-full grid grid-cols-4  justify-center items-center  py-36 px-24 gap-20'>
         {data.products.map((product, index) => (
-            <Card key={index} {...product}/>
+            <ProductCard key={index} {...product}/>
         ))}
         </div>
         </div>

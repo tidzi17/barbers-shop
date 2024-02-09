@@ -12,6 +12,7 @@ import Footer from './components/footer';
 import ScrollButton from './components/scroll-button';
 import ImageBanner from './components/imagebanner';
 import BookingSection from './components/bookingSection';
+import ProductPage from './pages/productPage';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
     <Route path="/team" exact element={<Team />} />
     <Route path="/gallery" exact element={<Gallery />} />
     <Route path="/contact" exact element={<Contact />} />
-    <Route path="/shop" exact element={<Shop/>} />
+    <Route path="/products" exact element={<Shop/>} />
+    <Route path="/products/:id" element={<ProductPage />} />
     {/* <Route path='*' element={<NotFound />}/> */}
     </Routes>
     <BookingSection />
