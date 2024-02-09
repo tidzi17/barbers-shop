@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Routes, Route } from 'react-router-dom';
+import {  Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from "./components/navbar";
 import Home from './pages/home';
 import About from './pages/about';
@@ -13,6 +13,8 @@ import ScrollButton from './components/scroll-button';
 import ImageBanner from './components/imagebanner';
 import BookingSection from './components/bookingSection';
 import ProductPage from './pages/productPage';
+import Cart from './pages/cart';
+import NotFound from './pages/404';
 
 function App() {
   return (
@@ -27,10 +29,13 @@ function App() {
     <Route path="/team" exact element={<Team />} />
     <Route path="/gallery" exact element={<Gallery />} />
     <Route path="/contact" exact element={<Contact />} />
-    <Route path="/products" exact element={<Shop/>} />
-    <Route path="/products/:id" element={<ProductPage />} />
-    {/* <Route path='*' element={<NotFound />}/> */}
+    <Route path="/products" element={<Navigate to="/products/all" replace />} />
+    <Route path="/products/:category" element={<Shop />} />
+    <Route path="/products/:cathegory/:id" element={<ProductPage />} />
+    <Route path="/cart" element={<Cart />} />
+    <Route path='*' element={<NotFound />}/>
     </Routes>
+    
     <BookingSection />
     <ImageBanner />
     <Footer />

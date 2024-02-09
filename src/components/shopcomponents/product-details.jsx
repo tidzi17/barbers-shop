@@ -32,10 +32,6 @@ function ProductDetails() {
         return <div><p className='text-white text-8xl'>Product not found</p></div>;
     }
 
-    
-  
-
-
   return (
     <div className=''>
           <div className=' w-full px-3 lg:px-24  xl:px-64 pt-5 pb-28'>

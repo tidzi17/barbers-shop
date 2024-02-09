@@ -66,7 +66,7 @@ export default function ShopSectionHome(){
 
 
 
-           <MotionDiv className="ml-[15%] md:ml-[28%] lg:ml-[40%] -mt-44 gap-5 flex md:w-2/3 items-center justify-around h-full "
+           <MotionDiv className="ml-[7%] md:ml-[28%] lg:ml-[40%] -mt-44 gap-5 flex md:w-2/3 items-center justify-around h-full "
            animationVariants={SlideXRight}
            onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}

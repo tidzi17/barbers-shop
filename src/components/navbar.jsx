@@ -52,6 +52,7 @@ export default function Navbar(){
             <AiOutlineShoppingCart onClick={() => setCart(true)}  className="text-3xl  text-zinc-200 cursor-pointer" />
           <div className="nav-button-container"><button onClick={handleScroll} className="nav-button  min620:hidden">Book apointment</button></div> 
         </div>
+
        {/*  Cart */}
         <div  onClick={() => setCart(false)} className={
           clsx("fixed h-full transition-all w-screen -translate-x-full  bg-black/50 backdrop-blur-sm top-0 right-0 z-40",
@@ -67,7 +68,7 @@ export default function Navbar(){
                     <p className="text-xl font-alumni">Your cart is empty</p>
                     <img src={emptyCart} alt="" className="w-44 h-44" />
                   </div>
-                  <button className="bg-black px-3 py-1 text-base text-white transform duration-200 hover:bg-white hover:border-2 hover:border-black hover:text-black" disabled>View Cart</button>
+                  <a href="/cart" className="bg-black px-3 py-1 border-2 border-transparent text-base text-white transform duration-200 hover:bg-white text-center  hover:border-black hover:text-black" >View Cart</a>
                  </div>
                 
              </div>
