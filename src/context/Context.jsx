@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, useState, useEffect } from "react";
+import React, { createContext, useContext, useReducer, useEffect } from "react";
 import productsData from '../data/products.json';
 import { cartReducer } from './Reducers';
 

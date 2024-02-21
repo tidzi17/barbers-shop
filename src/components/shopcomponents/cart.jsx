@@ -11,9 +11,11 @@ const CartItems = () => {
       const [total, setTotal] = useState();
     
       useEffect(() => {
-        setTotal(
-          cart.reduce((acc, curr) => acc + parseFloat(curr.price) * curr.qty, 0)
+        const newTotal = cart.reduce(
+          (acc, curr) => acc + parseFloat(curr.price) * curr.qty,
+          0
         );
+        setTotal(newTotal.toFixed(2)); 
       }, [cart]);
       
       
