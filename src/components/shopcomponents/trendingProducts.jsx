@@ -1,12 +1,14 @@
 import React from 'react'
-import data from '../../data/products.json'
+
 import ProductCard from './productCard'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { CartState } from '../../context/Context';
 
 
 function TrendingProducts() {
+  const { state: { products } } = CartState();
     const settings = {
         dots: false,
         infinite: true, 
@@ -47,9 +49,11 @@ function TrendingProducts() {
         <h2 className='text-white font-alumni text-3xl md:text-5xl mt-2'>Trending Products</h2>
         </div>
         <Slider {...settings} className='w-full flex justify-between mt-10'>
-            {data.products.slice(21, 31).map((product, index) => (
-                <ProductCard key={index} {...product} />
-            ))}
+        {
+            products.slice(21, 31).map((prod) => {
+               return <ProductCard  prod={prod} key={prod.id}/>
+            })
+        }
         </Slider>
    
       

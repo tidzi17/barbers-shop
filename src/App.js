@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Routes, Route, Navigate } from 'react-router-dom';
+import {  BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from "./components/navbar";
 import Home from './pages/home';
 import About from './pages/about';
@@ -18,10 +18,10 @@ import NotFound from './pages/404';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
     <Navbar/>
     <ScrollButton />
-    
+    <>
     <Routes>
     <Route path="/" exact element={<Home />} />
     <Route path="/about" exact element={<About />} />
@@ -35,12 +35,13 @@ function App() {
     <Route path="/cart" element={<Cart />} />
     <Route path='*' element={<NotFound />}/>
     </Routes>
+    </>
     
     <BookingSection />
     <ImageBanner />
     <Footer />
     
-  </>
+  </BrowserRouter>
 
   );
 }

@@ -1,9 +1,15 @@
 import React, { useState }  from 'react'
 import { useParams } from 'react-router-dom';
 import products from '../../data/products.json';
+import { AddToCartButton, RemoveFromCartButton } from './cartButtons';
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { CartState } from "../../context/Context";
 
 function ProductDetails() {
+    const { id } = useParams();
+    const { state: { cart } } = CartState();
+    const [product] = useState(products.find(product => product.id === id));
+
     const [showDescription, setShowDescription] = useState(true);
     const [showUsage, setShowUsage] = useState(false);
     const [showIngredients, setShowIngredients] = useState(false);
@@ -23,14 +29,15 @@ function ProductDetails() {
     const handleScroll = () => {
         const section = document.getElementById('description');
         section.scrollIntoView({ behavior: 'smooth' });
-      };
+    };
 
-    const { id } = useParams();
-    const product = products.products.find(product => product.id === id);
-
+  
     if (!product) {
         return <div><p className='text-white text-8xl'>Product not found</p></div>;
     }
+    
+  
+    const isInCart = cart.some(p => p.id === product.id);
 
   return (
     <div className=''>
@@ -52,10 +59,9 @@ function ProductDetails() {
             <p className='text-sm'>{product.cardDescription}</p>
             </div>
 
-            <div className='flex gap-8  md:text-xl mt-7 md:mt-0'> 
-            <p className='text-lg md:text-2xl'>-   1   +</p>
-            <button className='bg-white text-black px-1 md:px-3 py-1 rounded-lg md:text-lg text-base'>Add to cart</button>
-            </div>
+            <div className='  md:text-xl mt-7 md:mt-0'>
+                            {isInCart ? <RemoveFromCartButton prod={product} /> : <AddToCartButton prod={product} />}
+                            </div>
         </div>
 
       </div>
