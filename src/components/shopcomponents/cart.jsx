@@ -79,7 +79,6 @@ const CartItems = () => {
       { cart.length > 0
       ?(
         <div className=" border-2 border-black text-white">
-        <span className="title">Subtotal ({cart.length}) items</span>
         <p style={{ fontWeight: 700, fontSize: 20 }}>Total: ${total}</p>
         <button type="button" disabled={cart.length === 0}>
           Proceed to Checkout
