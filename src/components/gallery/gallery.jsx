@@ -85,7 +85,7 @@ const ImageGallery = ({ galleryImages }) => {
                             <div className='pics'
                              key={index} 
                              onClick={ () => handleOpenModal(index)}>
-                                <img src={slide} alt="" className='grayscale'/>
+                                <img src={slide} alt="" className='grayscale w-full'/>
                             </div>
                         )
                     })
