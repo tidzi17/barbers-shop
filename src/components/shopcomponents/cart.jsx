@@ -127,7 +127,7 @@ const CartItems = () => {
       <div className="w-full m-auto">
         <div className="flex flex-col gap-10 ">
           <p className="text-lg md:text-2xl uppercase tracking-widest">Empty Cart!</p>
-          <img src={img} className="w-44 h-44"/>
+          <img src={img} alt="empty cart" className="w-44 h-44"/>
           <Link to="/products"><Button text="Explore our shop"/></Link>
         </div>
       </div>
