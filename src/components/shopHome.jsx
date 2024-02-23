@@ -15,7 +15,6 @@ export default function ShopSectionHome() {
   const [slideIndex, setSlideIndex] = useState(0);
   const cardsPerPage = 5;
   const { state: { products } } = CartState(); 
-
   const maxIndex = Math.ceil(products.length / cardsPerPage) - 1;
 
   const handleTouchStart = (e) => {

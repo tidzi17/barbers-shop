@@ -34,13 +34,13 @@ const CartItems = () => {
               <div className="flex items-center md:justify-between h-[180px] md:h-[140px]">
                 
                 <div className="h-full">
-                <a  href={`/products/${prod.cathegory}/${prod.id}`} className="flex items-center justify-center h-full mr-5 md:mr-0">
-                  <img src={prod.url} alt={prod.title} className="h-[80%]" />
+                <a  href={`/products/${prod.cathegory}/${prod.id}`} className="flex items-center justify-center h-full mr-5 md:mr-0 ">
+                  <img src={prod.url} alt={prod.title} className="h-[80%] " />
                   {/* className="w-[130px] md:w-[120px]"  */}
                 </a>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-3 sm:min-w-[20%]">
+                <div className="flex flex-col md:flex-row gap-3 sm:min-w-[20%]  md:justify-between md:w-[90%] xl:w-[70%]">
                   
                 <div className="md:min-w-[400px]">
                   <span className="text-zinc-800 ">{prod.title}</span>
@@ -54,7 +54,7 @@ const CartItems = () => {
                <select
                  as="select"
                  value={prod.qty}
-                 className="border-[1px] border-zinc-700 w-14 md:w-20 rounded-lg px-1"
+                 className="border-[1px] border-zinc-700 w-14 xl:w-20 rounded-lg px-1"
                  onChange={(e) =>
                    dispatch({
                      type: "CHANGE_CART_QTY",
