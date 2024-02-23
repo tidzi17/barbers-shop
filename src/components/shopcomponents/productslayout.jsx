@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import ProductCard from './productCard';
+import { useNavigate } from 'react-router-dom'; 
 import { CartState } from '../../context/Context';
 
 
 const ProductsLayout = () => {
   const { state: { products  }} = CartState();
   const [selectedCategory, setSelectedCategory] = useState('all');
+ 
+  const navigate = useNavigate(); // Hook to get the navigate function
+
+  const handleCategoryChange = (event) => {
+    const category = event.target.value;
+    setSelectedCategory(category);
+    navigate(`/products/${category}`, { replace: true }); // Navigate to the selected category
+  };
+
 
   const filteredProducts = selectedCategory === 'all'
   ? products
@@ -15,19 +25,28 @@ const ProductsLayout = () => {
   return (
     <div  className='mb-10  md:gap-5 px-3 py-36  lg:px-10 xl:px-24 '>
       <div>
-      <div className='w-full flex justify-between text-zinc-800 text-xs md:text-2xl mb-4'>
-            <p>Filter products</p>
-            <div className='flex gap-6'>
+      <div className='w-full flex justify-between text-zinc-800  mb-4 '>
+            <p className='text-xs md:text-2xl'>Filter products</p>
+
+            <select value={selectedCategory} onChange={handleCategoryChange} className='rounded-lg px-2 bg-zinc-200 text-xs md:text-xl'>
+              <option value="all">All</option>
+              <option value="hair">Hair</option>
+              <option value="beard">Beard</option>
+              <option value="body">Body</option>
+              <option value="face">Face</option>
+            </select>
+            
+           {/*  <div className='flex gap-6'>
             <Link to="/products/all" onClick={() => setSelectedCategory('all')}>All</Link>
         <Link to="/products/hair" onClick={() => setSelectedCategory('hair')}>Hair</Link>
         <Link to="/products/beard" onClick={() => setSelectedCategory('beard')}>Beard</Link>
         <Link to="/products/body" onClick={() => setSelectedCategory('body')}>Body</Link>
         <Link to="/products/face" onClick={() => setSelectedCategory('face')}>Face</Link>
-            </div>
+            </div> */}
       </div>
       {/* grid grid-cols-2  min375:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5  */}
       <div className='w-full flex justify-center  m-auto '>
-    <div className=' flex flex-wrap justify-between items-left  m-auto'>
+    <div className='flex flex-wrap items-left m-auto'>
     {
             filteredProducts.map((prod) => {
                return <ProductCard

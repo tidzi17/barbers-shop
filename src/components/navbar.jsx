@@ -71,9 +71,9 @@ export default function Navbar(){
             className="text-black bg-white ml-auto transition-all  flex flex-col absolute  w-56 lg:w-64  right-0 top-0 h-screen  gap-8 z-50 py-5">
              <IoCloseOutline
                 onClick={() => setCart(false)}
-                 className="mt-0 text-3xl lg:text-4xl cursor-pointer" />
+                 className="mt-0 ml-2 text-3xl lg:text-4xl cursor-pointer" />
                  <div className="w-full h-full px-2 flex flex-col justify-between">
-                 <p className="text-xl font-alumni uppercase">Cart:</p>
+                 <p className="text-xl font-alumni uppercase ml-2">Cart:</p>
                  <div className="flex flex-col gap-1">
                  {
                   cart.length > 0

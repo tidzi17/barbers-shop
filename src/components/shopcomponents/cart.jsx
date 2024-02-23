@@ -53,7 +53,7 @@ const CartItems = () => {
                <select
                  as="select"
                  value={prod.qty}
-                 className="border-[1px] border-zinc-700 w-10 md:w-20"
+                 className="border-[1px] border-zinc-700 w-14 md:w-20 rounded-lg px-1"
                  onChange={(e) =>
                    dispatch({
                      type: "CHANGE_CART_QTY",
@@ -79,7 +79,7 @@ const CartItems = () => {
                      })
                    }
                  >
-                   <AiFillDelete fontSize="20px" className="text-zinc-800" />
+                   <AiFillDelete fontSize="20px" className="text-zinc-800 transform-all ease-in-out duration-300 hover:scale-105 hover:text-red-900" />
                  </button>
                </div>
               </div>
