@@ -81,8 +81,8 @@ export default function Navbar(){
                     <>
                          {cart.map((prod) => (
                                 <div className='w-full h-[70px] border-y-[1px] border-zinc-700 flex items-center justify-between' key={prod.id}>
-                                    <div className="w-1/3 h-full">
-                                    <img src={prod.url} className='object-cover w-full h-full' alt={prod.name} />
+                                    <div className="w-1/3 h-full flex items-center justify-center">
+                                    <img src={prod.url} className='object-cover w h-full' alt={prod.name} />
                                     </div>
                                     
                                 <div className='text-[0.60rem]'>

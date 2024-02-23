@@ -46,7 +46,7 @@ function ProductDetails() {
        <div className=''>
       <div className='flex flex-col md:flex-row'>
 
-        <div className='shadow-zinc-400 shadow-xl md:w-1/2 h-[300px] lg:h-[550px] rounded-xl bg-zinc-300'>
+        <div className='flex items-center justify-center shadow-zinc-400 shadow-xl md:w-1/2 h-[300px] lg:h-[550px] rounded-xl bg-zinc-300'>
             <img src={product.url} alt="" className='h-full'/>
         </div>
 

@@ -6,8 +6,8 @@ const ProductCard = ( { prod, containerClassName, imageContainerClassName,  titl
     const { state: { cart } } = CartState();
     return(
         <div className={`${containerClassName} border-[1px]  min375:w-[150px] min375:h-[200px] h-[250px] w-[160px]  md:h-[320px] md:w-[190px] xl:h-[300px] xl:w-[220px] rounded-2xl flex flex-col overflow-hidden `}>
-               <a  href={`/products/${prod.cathegory}/${prod.id}`}   className={`${imageContainerClassName} h-[50%] md:h-[55%] rounded-t-2xl bg-zinc-300`}>
-                <img src={prod.url} alt="" className=' h-full transform duration-500 ease-in-out hover:scale-110'/>
+               <a  href={`/products/${prod.cathegory}/${prod.id}`}   className={`${imageContainerClassName} flex items-center justify-center py-2 h-[50%] md:h-[55%] rounded-t-2xl bg-zinc-300`}>
+                <img src={prod.url} alt="" className=' h-full transform duration-500 ease-in-out hover:scale-110 '/>
                 </a>
                 <div className='px-2 py-2 flex flex-col justify-between h-1/2 md:[40%]'>
                 <p className={`${titleClassName} min375:text-[0.6rem] text-xs  font-sans font-bold`}>{prod.title}</p>

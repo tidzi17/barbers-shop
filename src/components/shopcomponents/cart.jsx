@@ -26,16 +26,17 @@ const CartItems = () => {
   console.log(total)
 
   return (
-    <div className="w-full m-auto py-20 px-10 flex flex-col lg:flex-row justify-between">
+    <div className="w-full m-auto pt-10 pb-20 px-10 flex flex-col lg:flex-row justify-between">
       <div className="w-full lg:w-[70%] flex flex-col">
         <div className="w-full flex flex-col gap-4">
           {cart.map((prod) => (
             <div key={prod.id} className="border-y-[1px] border-zinc-700 px-1" >
               <div className="flex items-center md:justify-between h-[180px] md:h-[140px]">
                 
-                <div>
-                <a  href={`/products/${prod.cathegory}/${prod.id}`} >
-                  <img src={prod.url} alt={prod.title} className="w-[130px] md:w-[120px]" />
+                <div className="h-full">
+                <a  href={`/products/${prod.cathegory}/${prod.id}`} className="flex items-center justify-center h-full mr-5 md:mr-0">
+                  <img src={prod.url} alt={prod.title} className="h-[80%]" />
+                  {/* className="w-[130px] md:w-[120px]"  */}
                 </a>
                 </div>
 
