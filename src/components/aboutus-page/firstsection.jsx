@@ -1,15 +1,14 @@
-import { Link } from 'react-router-dom';
 import image from '../../assets/chair.webp';
-import Button from '../button';
+
 import MotionDiv from '../../components/animation';
 import { SlideXLeft } from '../../components/animation';
 import { SlideXRight } from '../../components/animation';
 
 export default function AboutFirstSection(){
     return(
-        <div className='w-full  h-[140vh]  md:h-[85vh] p-6 md:p-10 overflow-hidden'>
+        <div className='w-full  h-[110vh]  md:h-[85vh] p-6 md:p-10 overflow-hidden'>
         <div className="flex flex-col md:flex-row  w-full h-full justify-around m-auto">
-        <MotionDiv className='w-full md:w-1/2 md:h-full md:py-10 mb-3 md:mb-0  text-zinc-300'
+        <MotionDiv className='w-full h-fit  md:w-1/2 md:h-full md:py-10 mb-3 md:mb-0  text-zinc-300'
         animationVariants={SlideXLeft}
         >
         <div className='w-[70px] h-[2px] bg-zinc-300'></div>
@@ -19,7 +18,7 @@ export default function AboutFirstSection(){
         <p className='lg:mt-4 text-xs lg:text-base mb-2 md:mb-10 font-sans font-light'>Our commitment to excellence extends beyond the barber's chair. At Masters, we pride ourselves on creating a community where every client feels valued and respected. Whether you're a regular or a first-time visitor, our friendly staff ensures that your experience is nothing short of exceptional. Join us in celebrating the art of grooming, where every visit is an opportunity to indulge in luxury and style.</p>
        
        </MotionDiv>
-            <MotionDiv className='w-full h-2/3 md:w-1/2 md:p-10 lg:p-0 lg:w-1/3 md:h-full'
+            <MotionDiv className='w-full h-1/2 md:w-1/2 md:p-10 lg:p-0 lg:w-1/3 md:h-full'
             animationVariants={SlideXRight}>
                 <img src={image} alt="someimage" className='object-cover w-full h-full grayscale'/>
             </MotionDiv>

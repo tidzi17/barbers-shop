@@ -5,9 +5,9 @@ import { SlideXRight } from '../../components/animation';
 
 export default function SecondSectionA(){
     return(
-        <div className='about-section-second w-full  h-[140vh]  md:h-[85vh]   p-6 md:p-10 bg-zinc-300 overflow-hidden'>
+        <div className='about-section-second w-full  h-[110vh]  md:h-[85vh]   p-6 md:p-10 bg-zinc-300 overflow-hidden'>
         <div className="flex flex-col md:flex-row  w-full h-full justify-around m-auto">
-        <MotionDiv className='w-full md:w-1/2 flex flex-col py-10 md:items-end md:text-right'
+        <MotionDiv className='w-full h-fit md:w-1/2 flex flex-col py-10 md:items-end md:text-right'
         animationVariants={SlideXLeft}>
         <div className='w-[70px] h-[2px] bg-black'></div>
         <h2 className='md:mt-2 text-3xl md:text-5xl font-alumni'>29 Years!</h2>
