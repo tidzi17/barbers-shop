@@ -9,7 +9,7 @@ module.exports = {
         screens: {
         md1200: { max: "1200px" },
         md1000: { max: "1000px" },
-        min800: { max: "800px" },
+        min845: { min: "846px" },
         max800: { min: "801px" },
         min720: { max: "721px" },
         min620: { max: "620px" },
