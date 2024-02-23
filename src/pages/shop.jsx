@@ -13,7 +13,7 @@ export default function Shop(){
         <div className='bg-zinc-100'>
         <div>
         <img src={landingimage} alt="landingimage" className="w-full h-[40vh] md:h-[70vh] object-cover grayscale relative"/>
-        <MotionDiv className="w-full absolute top-0 text-white flex flex-col items-center transform mt-64 gap-5 "
+        <MotionDiv className="w-full absolute top-0 text-white flex flex-col items-center transform mt-[10rem] md:mt-64 gap-5 "
         animationVariants={SlideXLeft}
         viewport={
             {once: true} 
