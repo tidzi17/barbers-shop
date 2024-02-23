@@ -23,12 +23,12 @@ const ProductsLayout = () => {
   : products.filter(prod => prod.cathegory === selectedCategory);
 
   return (
-    <div  className='mb-10  md:gap-5 px-3 py-36  lg:px-10 xl:px-24 '>
+    <div  className='mb-10  md:gap-5 px-3 py-14 md:py-36  lg:px-10 xl:px-24 '>
       <div>
       <div className='w-full flex justify-between text-zinc-800  mb-4 '>
-            <p className='text-xs md:text-2xl'>Filter products</p>
+            <p className='text-2xl'>Filter products</p>
 
-            <select value={selectedCategory} onChange={handleCategoryChange} className='rounded-lg px-2 bg-zinc-200 text-xs md:text-xl'>
+            <select value={selectedCategory} onChange={handleCategoryChange} className='rounded-lg px-2 bg-zinc-200 text-xl'>
               <option value="all">All</option>
               <option value="hair">Hair</option>
               <option value="beard">Beard</option>
