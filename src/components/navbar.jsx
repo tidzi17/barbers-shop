@@ -87,7 +87,7 @@ export default function Navbar(){
                                     
                                 <div className='text-[0.60rem]'>
                                     <p className="">{prod.title}</p>
-                                    <p className="">{prod.price}</p>
+                                    <p className="">${prod.price}</p>
                                 </div>
                                 <AiFillDelete
                                 className="text-3xl"

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
 import { CartState } from "../../context/Context";
-
+import img from '../../assets/emptycart.png';
+import Button from "../button";
+import { Link } from "react-router-dom";
 
 const CartItems = () => {
     const {
@@ -122,8 +124,12 @@ const CartItems = () => {
       </div>
       )
     :(
-      <div className="p-20">
-        <p className="text-7xl text-white">Cart is Empty</p>
+      <div className="w-full m-auto">
+        <div className="flex flex-col gap-10 ">
+          <p className="text-lg md:text-2xl uppercase tracking-widest">Empty Cart!</p>
+          <img src={img} className="w-44 h-44"/>
+          <Link to="/products"><Button text="Explore our shop"/></Link>
+        </div>
       </div>
     )
     }
