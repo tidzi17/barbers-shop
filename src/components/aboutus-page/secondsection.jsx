@@ -16,7 +16,7 @@ export default function SecondSectionA(){
         <p className='lg:mt-4 text-xs lg:text-base mb-2 md:mb-10 font-sans font-light'>Our journey over the past 29 years has been marked by dedication, passion, and a relentless pursuit of perfection. From our humble beginnings to becoming a renowned establishment, we have upheld the highest standards of quality and innovation. As we look towards the future, we remain steadfast in our mission to redefine grooming experiences and set new benchmarks of excellence. Join us as we continue to shape the landscape of the grooming industry for years to come.</p>
        
        </MotionDiv>
-            <MotionDiv className='w-full h-2/3 md:w-1/2 md:p-10 lg:p-0 lg:w-1/3 md:h-full md:order-first'
+            <MotionDiv className='w-full h-1/2 md:w-1/2 md:p-10 lg:p-0 lg:w-1/3 md:h-full md:order-first'
             animationVariants={SlideXRight}>
                 <img src={image} alt="someimage" className='object-cover w-full h-full grayscale'/>
             </MotionDiv>
