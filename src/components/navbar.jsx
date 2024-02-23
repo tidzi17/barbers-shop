@@ -68,25 +68,26 @@ export default function Navbar(){
           clsx("fixed h-full transition-all w-screen -translate-x-full  bg-black/50 backdrop-blur-sm top-0 right-0 z-40",
           isCartOpen ? 'translate-x-0' : 'translate-x-full')}>
              <div
-            className="text-black bg-white ml-auto transition-all  flex flex-col absolute  w-56 lg:w-64  right-0 top-0 h-screen  gap-8 z-50 ">
+            className="text-black bg-white ml-auto transition-all  flex flex-col absolute  w-56 lg:w-64  right-0 top-0 h-screen  gap-8 z-50 py-5">
              <IoCloseOutline
                 onClick={() => setCart(false)}
                  className="mt-0 text-3xl lg:text-4xl cursor-pointer" />
                  <div className="w-full h-full px-2 flex flex-col justify-between">
                  <p className="text-xl font-alumni uppercase">Cart:</p>
+                 <div className="flex flex-col gap-1">
                  {
                   cart.length > 0
                   ?(
                     <>
                          {cart.map((prod) => (
-                                <div className='w-full h-[100px] border-[2px] border-black flex items-center justify-center' key={prod.id}>
+                                <div className='w-full h-[70px] border-y-[1px] border-zinc-700 flex items-center justify-between' key={prod.id}>
                                     <div className="w-1/3 h-full">
-                                    <img src={prod.url} className='' alt={prod.name} />
+                                    <img src={prod.url} className='object-cover w-full h-full' alt={prod.name} />
                                     </div>
                                     
-                                <div className='text-xs'>
-                                    <p>{prod.title}</p>
-                                    <p>{prod.price}</p>
+                                <div className='text-[0.60rem]'>
+                                    <p className="font-mono">{prod.title}</p>
+                                    <p className="font-mono">{prod.price}</p>
                                 </div>
                                 <AiFillDelete
                                 className="text-3xl"
@@ -109,6 +110,8 @@ export default function Navbar(){
                   </div>
                   )
                  }
+                 </div>
+                
                   
                   <a href="/cart" className="bg-black px-3 py-1 border-2 border-transparent text-base text-white transform duration-200 hover:bg-white text-center  hover:border-black hover:text-black" >View Cart</a>
                  </div>

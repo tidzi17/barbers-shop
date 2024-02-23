@@ -102,7 +102,12 @@ export default function ShopSectionHome() {
           <div className="flex gap-4 ml-5 overflow-hidden">
             {products.slice(1, 9).map((prod, index) => (
               <div key={index} style={slideStyle}>
-                <ProductCard prod={prod} />
+                <ProductCard
+                 prod={prod}
+                 containerClassName="border-zinc-900  m-2 shadow-zinc-900 shadow-sm"
+                imageContainerClassName="product-img-container"
+                titleClassName="text-zinc-300"
+                priceClassName="text-zinc-300" />
               </div>
             ))}
           </div>

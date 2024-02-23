@@ -10,7 +10,7 @@ export default function Shop(){
     
 
     return(
-        <div>
+        <div className='bg-zinc-100'>
         <div>
         <img src={landingimage} alt="landingimage" className="w-full h-[70vh] object-cover grayscale relative"/>
         <MotionDiv className="w-full absolute top-0 text-white flex flex-col items-center transform mt-64 gap-5 "

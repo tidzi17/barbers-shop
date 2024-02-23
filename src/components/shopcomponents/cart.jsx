@@ -24,69 +24,105 @@ const CartItems = () => {
   console.log(total)
 
   return (
-    <div className="w-11/12 m-auto ">
-      <div className="w-full flex flex-col">
+    <div className="w-full m-auto py-20 px-10 flex flex-col lg:flex-row justify-between">
+      <div className="w-full lg:w-[70%] flex flex-col">
         <div className="w-full flex flex-col gap-4">
           {cart.map((prod) => (
-            <div key={prod.id} >
-              <div className="flex items-center justify-between">
-                <div >
-                  <img src={prod.url} alt={prod.title} className="w-[100px]" />
+            <div key={prod.id} className="border-y-[1px] border-zinc-700 px-1" >
+              <div className="flex items-center md:justify-between h-[180px] md:h-[140px]">
+                
+                <div>
+                <a  href={`/products/${prod.cathegory}/${prod.id}`} >
+                  <img src={prod.url} alt={prod.title} className="w-[130px] md:w-[120px]" />
+                </a>
                 </div>
-                <div >
-                  <span className="text-white">{prod.title}</span>
+
+                <div className="flex flex-col md:flex-row gap-3 sm:min-w-[20%]">
+                  
+                <div className="md:min-w-[400px]">
+                  <span className="text-zinc-800 ">{prod.title}</span>
                 </div>
-                <div className="text-white">${prod.price}</div>
+
                
-                <div >
-                <select
-                  as="select"
-                  value={prod.qty}
-                  onChange={(e) =>
-                    dispatch({
-                      type: "CHANGE_CART_QTY",
-                      payload: {
-                        id: prod.id,
-                        qty: e.target.value,
-                      },
-                    })
-                  }
-                >
-                  {[...Array(prod.inStock).keys()].map((x) => (
-                    <option clas key={x + 1}>{x + 1}</option>
-                  ))}
-                </select>
-                </div>
-                <div >
-                  <button
-                    type="button"
-                    variant="light"
-                    onClick={() =>
-                      dispatch({
-                        type: "REMOVE_FROM_CART",
-                        payload: prod,
-                      })
-                    }
-                  >
-                    <AiFillDelete fontSize="20px" className="text-white" />
-                  </button>
-                </div>
+               <div className="text-zinc-800">${prod.price}</div>
+               
+              <div className="flex gap-4 items-center">
+              <div >
+               <select
+                 as="select"
+                 value={prod.qty}
+                 className="border-[1px] border-zinc-700 w-10 md:w-20"
+                 onChange={(e) =>
+                   dispatch({
+                     type: "CHANGE_CART_QTY",
+                     payload: {
+                       id: prod.id,
+                       qty: e.target.value,
+                     },
+                   })
+                 }
+               >
+                 {[...Array(prod.inStock).keys()].map((x) => (
+                   <option clas key={x + 1} >{x + 1}</option>
+                 ))}
+               </select>
+               </div>
+               <div >
+                 <button
+                   type="button"
+                   onClick={() =>
+                     dispatch({
+                       type: "REMOVE_FROM_CART",
+                       payload: prod,
+                     })
+                   }
+                 >
+                   <AiFillDelete fontSize="20px" className="text-zinc-800" />
+                 </button>
+               </div>
               </div>
-            </div>
+
+               </div>
+                </div>
+
+              </div>
+            
           ))}
         </div>
       </div>
       { cart.length > 0
       ?(
-        <div className=" border-2 border-black text-white">
-        <p style={{ fontWeight: 700, fontSize: 20 }}>Total: ${total}</p>
-        <button type="button" disabled={cart.length === 0}>
+
+
+    
+    <div className="w-full lg:w-[25%] h-[290px] md:h-[380px] mt-14 lg:mt-0 bg-zinc-300 rounded-2xl  text-zinc-800 p-2 py-3  shadow-zinc-400 shadow-lg flex flex-col justify-between ">
+
+    <p className="text-lg md:text-xl font-sans font-medium pb-2">Order subtotal: ({cart.length}) </p>
+    <div className="border-y-[1px] border-zinc-800 py-4">
+    <div className="w-full flex justify-between py-2">
+    <span className="font-bold text-lg md:text-2xl" >Order total:</span><span> ${total}</span>
+    </div>
+    <div className="w-full flex justify-between py-2">
+      <span>Delivery cost:</span><span>$0.00</span>
+    </div>
+    </div>
+       
+    <div className="w-full flex justify-between ">
+    <span className="font-bold text-xl md:text-2xl" >Total:</span><span> ${total}</span>
+    </div>
+
+
+      <div className="flex items-center justify-center">
+      <button type="button" disabled={cart.length === 0}
+        className="bg-zinc-400 p-2 rounded-lg font-medium text-base md:text-lg">
           Proceed to Checkout
         </button>
       </div>
+
+      </div>
       )
     :(
-      <div>
+      <div className="p-20">
         <p className="text-7xl text-white">Cart is Empty</p>
       </div>
     )

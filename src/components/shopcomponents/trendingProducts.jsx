@@ -43,15 +43,22 @@ function TrendingProducts() {
     };
 
   return (
-    <div className='w-full lg:px-24 px-6'>
+    <div className='w-full lg:px-24 px-6 py-20'>
         <div>
-        <div className='w-[70px] h-[2px] bg-white'></div>
-        <h2 className='text-white font-alumni text-3xl md:text-5xl mt-2'>Trending Products</h2>
+        <div className='w-[70px] h-[2px] bg-zinc-900'></div>
+        <h2 className='text-zinc-800 font-alumni text-3xl md:text-5xl mt-2'>Trending Products</h2>
         </div>
-        <Slider {...settings} className='w-full flex justify-between mt-10'>
+        <Slider {...settings} className='w-full flex justify-between mt-10 '>
         {
             products.slice(21, 31).map((prod) => {
-               return <ProductCard  prod={prod} key={prod.id}/>
+               return <ProductCard
+                 prod={prod}
+                key={prod.id}
+                containerClassName="border-transparent shadow-zinc-300 shadow-lg m-2"
+                imageContainerClassName="shadow-zinc-300 shadow-lg"
+                titleClassName="text-zinc-800"
+                priceClassName="text-zinc-700"
+                />
             })
         }
         </Slider>

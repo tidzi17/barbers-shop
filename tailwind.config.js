@@ -11,10 +11,11 @@ module.exports = {
         md1000: { max: "1000px" },
         min800: { max: "800px" },
         max800: { min: "801px" },
+        min720: { max: "721px" },
         min620: { max: "620px" },
         min540: { max: "540px" },
         min450: { max: "450px" },
-        min375: { max: "375px" },
+        min375: { max: "376px" },
         },
         colors:{
           primaryOrange: '#CB8214',
