@@ -4,6 +4,7 @@ import { CartState } from "../../context/Context";
 import img from '../../assets/emptycart.png';
 import Button from "../button";
 import { Link } from "react-router-dom";
+import { TfiClose } from "react-icons/tfi";
 
 const CartItems = () => {
     const {
@@ -98,9 +99,9 @@ const CartItems = () => {
 
 
     
-    <div className="w-full lg:w-[25%] h-[290px] md:h-[380px] mt-14 lg:mt-0 bg-zinc-300 rounded-2xl  text-zinc-800 p-2 py-3  shadow-zinc-400 shadow-lg flex flex-col justify-between ">
+    <div className="w-full lg:w-[25%] h-[290px] md:h-[380px] lg:border-l-[1px] border-black mt-14 lg:mt-0  text-zinc-800 pl-2  flex flex-col justify-between ">
 
-    <p className="text-lg md:text-xl font-sans font-medium pb-2">Order subtotal: ({cart.length}) </p>
+    <p className="text-lg md:text-xl font-sans font-medium pb-2">Your shopping cart: ({cart.length}) </p>
     <div className="border-y-[1px] border-zinc-800 py-4">
     <div className="w-full flex justify-between py-2">
     <span className="font-bold text-lg md:text-2xl" >Order total:</span><span> ${total}</span>

@@ -560,6 +560,7 @@ body{
 .home-gallery-section-images {
   animation: slideInFromRight 1s forwards; /* Adjust the duration as needed */
 }
+
 /* <!-- HTML !-->
 <button class="button-56" role="button">Button 56</button>
 

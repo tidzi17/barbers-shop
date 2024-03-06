@@ -3,6 +3,7 @@ import MotionDiv from '../../components/animation';
 import { SlideXLeft } from '../../components/animation';
 import { SlideXRight } from '../../components/animation';
 
+
 export default function SecondSectionA(){
     return(
         <div className='about-section-second w-full  h-[130vh]  md:h-[85vh]   p-6 md:p-10 bg-zinc-300 overflow-hidden'>
@@ -20,7 +21,6 @@ export default function SecondSectionA(){
             animationVariants={SlideXRight}>
                 <img src={image} alt="someimage" className='object-cover w-full h-full grayscale'/>
             </MotionDiv>
-       
         </div>
     </div>
       

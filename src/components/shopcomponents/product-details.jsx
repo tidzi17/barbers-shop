@@ -46,8 +46,8 @@ function ProductDetails() {
        <div className=''>
       <div className='flex flex-col md:flex-row'>
 
-        <div className='flex items-center justify-center shadow-zinc-400 shadow-xl md:w-1/2 h-[300px] lg:h-[550px] rounded-xl bg-zinc-300'>
-            <img src={product.url} alt="" className='h-full'/>
+        <div className='flex items-center justify-center shadow-zinc-400 shadow-lg md:w-1/2 h-[300px] lg:h-[550px] rounded-xl bg-zinc-200'>
+            <img src={product.url} alt="" className='h-[80%] md:h-[75%]'/>
         </div>
 
         <div className='md:w-1/2 text-zinc-900 flex flex-col md:justify-around md:px-10'>
@@ -59,7 +59,7 @@ function ProductDetails() {
             <p className='text-sm'>{product.cardDescription}</p>
             </div>
 
-            <div className='  md:text-xl mt-7 md:mt-0'>
+            <div className='md:text-xl mt-7 md:mt-0'>
             {isInCart 
             ? <RemoveFromCartButton prod={product} addButtonStyle="bg-red-600 rounded-lg px-4 py-1 text-xl text-zinc-300 border-[2px] border-transparent"/> 
             : <AddToCartButton prod={product} addButtonStyle="bg-black rounded-lg px-4 py-1 text-xl text-zinc-200 border-[2px] border-transparent transform-all duration-500 ease-in-out hover:bg-white hover:text-black hover:border-black"/>}

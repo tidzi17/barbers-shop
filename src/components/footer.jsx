@@ -53,7 +53,7 @@ export default function Footer(){
 
                 </div>
                 <div className="w-11/12 border-t-[1px] border-zinc-300 m-auto flex items-center pt-5">
-                    <p className="m-auto text-sm lg:text-base font-sans text-zinc-500">&copy;Copyright 2024 All rights reserved</p>
+                    <a href="https://tijanadjportfolio.vercel.app/" target="blank" className="m-auto text-sm lg:text-base font-sans text-zinc-500">&copy;Designed & Developed by <span className="font-bold text-lg md:text-xl">t.</span></a>
                 </div>
             </h1>
         </div>
